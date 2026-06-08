@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0.0",
+  "extractor_version": "0.1.0-gate1-sample",
+  "run_id": "sample-gate1-2026-05-12",
+  "corpus_hash": "sample:gate1-illustrative",
+  "source_files": [
+    {
+      "id": "sf-001",
+      "path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+      "source_hash": "sample:cbl-COSGN00C",
+      "normalized_source_hash": "sample:cbl-COSGN00C-norm",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-006",
+      "path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+      "source_hash": "sample:prc-TRANREPT",
+      "normalized_source_hash": "sample:prc-TRANREPT-norm",
+      "encoding": "utf-8",
+      "language": "JCL_PROC",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-007",
+      "path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+      "source_hash": "sample:prc-REPROC",
+      "normalized_source_hash": "sample:prc-REPROC-norm",
+      "encoding": "utf-8",
+      "language": "JCL_PROC",
+      "parse_status": "ok"
+    }
+  ],
+  "observations": [
+    {
+      "id": "obs-001",
+      "kind": "entity_candidate",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 2,
+          "end_line": 2,
+          "snippet": "       PROGRAM-ID. COSGN00C.",
+          "role": "declaration",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        }
+      ],
+      "data": {
+        "entity_type": "Program",
+        "name": "COSGN00C",
+        "id_candidate": "program:COSGN00C",
+        "filename_match": true
+      }
+    },
+    {
+      "id": "obs-002",
+      "kind": "edge_candidate",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-014",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 185,
+          "end_line": 187,
+          "snippet": "                            EXEC CICS XCTL",
+          "role": "use-site",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        }
+      ],
+      "data": {
+        "edge_type": "XCTLS_TO",
+        "from": "program:COSGN00C",
+        "to_candidate": "program:COMEN01C"
+      }
+    },
+    {
+      "id": "obs-003",
+      "kind": "entity_candidate",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-PROC-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 1,
+          "end_line": 1,
+          "snippet": "//REPROC PROC",
+          "role": "declaration",
+          "source_file_id": "sf-006",
+          "source_hash": "sample:prc-TRANREPT"
+        }
+      ],
+      "data": {
+        "entity_type": "JCLProc",
+        "declared_name": "REPROC",
+        "id_candidate": "jcl-proc:REPROC",
+        "filename": "TRANREPT.prc",
+        "filename_mismatch": true,
+        "anomaly_ref": "anomaly-1-proc-name-collision"
+      }
+    },
+    {
+      "id": "obs-004",
+      "kind": "entity_candidate",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-PROC-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 1,
+          "end_line": 1,
+          "snippet": "//REPROC PROC",
+          "role": "declaration",
+          "source_file_id": "sf-007",
+          "source_hash": "sample:prc-REPROC"
+        }
+      ],
+      "data": {
+        "entity_type": "JCLProc",
+        "declared_name": "REPROC",
+        "id_candidate": "jcl-proc:REPROC",
+        "filename": "REPROC.prc",
+        "filename_mismatch": false
+      }
+    },
+    {
+      "id": "obs-005",
+      "kind": "anomaly",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-006",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 1,
+          "end_line": 1,
+          "snippet": "//REPROC PROC",
+          "role": "collision-evidence",
+          "source_file_id": "sf-006",
+          "source_hash": "sample:prc-TRANREPT"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 1,
+          "end_line": 1,
+          "snippet": "//REPROC PROC",
+          "role": "collision-evidence",
+          "source_file_id": "sf-007",
+          "source_hash": "sample:prc-REPROC"
+        }
+      ],
+      "data": {
+        "anomaly_type": "proc_name_collision",
+        "canonical_id": "jcl-proc:REPROC",
+        "competing_sources": [
+          "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "corpus/carddemo/stripped/app/proc/TRANREPT.prc"
+        ],
+        "resolution": "both retained as candidates; conflict-ledger entry written; no edges produced into jcl-proc:REPROC until human review (per RUL-RES-006)"
+      }
+    },
+    {
+      "id": "obs-006",
+      "kind": "edge_candidate",
+      "evidence_kind": "llm_candidate",
+      "prompt_template_id": "PT-COBOL-2026.05-001",
+      "category": "hypothesized",
+      "rule_id": "RUL-COBOL-012",
+      "uncertainty_rationale": "Identifier WS-NEXT-PROGRAM is set by a MOVE statement 8 lines earlier from a literal — strong evidence the dynamic CALL resolves to that literal, but per spec dynamic CALL must NOT be promoted to static without manual review.",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCALL01.cbl",
+          "start_line": 99,
+          "end_line": 99,
+          "snippet": "           CALL WS-NEXT-PROGRAM USING WS-COMMAREA",
+          "role": "use-site",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        }
+      ],
+      "data": {
+        "edge_type": "CALLS",
+        "from": "program:COCALL01",
+        "to_candidate": "unresolved:WS-NEXT-PROGRAM",
+        "to_breadcrumb": "WS-NEXT-PROGRAM set to literal 'COSGN00C' at line 91 via MOVE statement",
+        "would_resolve_to_if_promoted": "program:COSGN00C",
+        "must_not_promote": true
+      }
+    }
+  ]
+}

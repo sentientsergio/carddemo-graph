@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0.0",
+  "extractor_version": "0.1.0-gate1-sample",
+  "run_id": "sample-gate1-2026-05-12",
+  "corpus_hash": "sample:gate1-illustrative",
+  "source_files": [
+    {
+      "id": "sf-001",
+      "path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+      "source_hash": "sample:cbl-COSGN00C",
+      "normalized_source_hash": "sample:cbl-COSGN00C-norm",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-002",
+      "path": "corpus/carddemo/stripped/app/cpy/CSUSR01Y.cpy",
+      "source_hash": "sample:cpy-CSUSR01Y",
+      "normalized_source_hash": "sample:cpy-CSUSR01Y-norm",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-003",
+      "path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+      "source_hash": "sample:jcl-POSTTRAN",
+      "normalized_source_hash": "sample:jcl-POSTTRAN-norm",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-004",
+      "path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+      "source_hash": "sample:bms-COSGN00",
+      "normalized_source_hash": "sample:bms-COSGN00-norm",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-005",
+      "path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+      "source_hash": "sample:csd-CARDDEMO",
+      "normalized_source_hash": "sample:csd-CARDDEMO-norm",
+      "encoding": "utf-8",
+      "language": "CSD",
+      "parse_status": "ok"
+    }
+  ],
+  "entities": [
+    {
+      "id": "program:COSGN00C",
+      "type": "Program",
+      "name": "COSGN00C",
+      "partial": false,
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 2,
+          "end_line": 2,
+          "snippet": "       PROGRAM-ID. COSGN00C.",
+          "role": "declaration",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        }
+      ],
+      "properties": {
+        "size_loc": 248
+      }
+    },
+    {
+      "id": "copybook:CSUSR01Y",
+      "type": "Copybook",
+      "name": "CSUSR01Y",
+      "partial": false,
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-002",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cpy/CSUSR01Y.cpy",
+          "start_line": 1,
+          "end_line": 1,
+          "role": "file-presence",
+          "source_file_id": "sf-002",
+          "source_hash": "sample:cpy-CSUSR01Y"
+        }
+      ],
+      "properties": {
+        "reuse_count": 12
+      }
+    },
+    {
+      "id": "jcl-job:POSTTRAN",
+      "type": "JCLJob",
+      "name": "POSTTRAN",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 1,
+          "end_line": 2,
+          "snippet": "//POSTTRAN JOB 'POSTTRAN',CLASS=A,MSGCLASS=0,\n// NOTIFY=&SYSUID",
+          "role": "declaration",
+          "source_file_id": "sf-003",
+          "source_hash": "sample:jcl-POSTTRAN"
+        }
+      ]
+    },
+    {
+      "id": "bms-mapset:COSGN00",
+      "type": "BMSMapset",
+      "name": "COSGN00",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 1,
+          "end_line": 7,
+          "snippet": "COSGN00 DFHMSD CTRL=(ALARM,FREEKB), ...",
+          "role": "declaration",
+          "source_file_id": "sf-004",
+          "source_hash": "sample:bms-COSGN00"
+        }
+      ],
+      "properties": {
+        "lang": "COBOL",
+        "mode": "INOUT",
+        "ctrl": "ALARM,FREEKB",
+        "storage": "AUTO"
+      }
+    },
+    {
+      "id": "transaction:CC00",
+      "type": "CICSTransaction",
+      "name": "CC00",
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 378,
+          "end_line": 379,
+          "snippet": " DEFINE TRANSACTION(CC00) GROUP(CARDDEMO)\n        PROGRAM(COSGN00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)",
+          "role": "declaration",
+          "source_file_id": "sf-005",
+          "source_hash": "sample:csd-CARDDEMO"
+        }
+      ]
+    }
+  ]
+}

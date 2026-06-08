@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "extractor_version": "0.1.0-gate1-sample",
+  "run_id": "sample-gate1-2026-05-12",
+  "corpus_hash": "sample:gate1-illustrative",
+  "source_files": [
+    {
+      "id": "sf-001",
+      "path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+      "source_hash": "sample:cbl-COSGN00C",
+      "normalized_source_hash": "sample:cbl-COSGN00C-norm",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-003",
+      "path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+      "source_hash": "sample:jcl-POSTTRAN",
+      "normalized_source_hash": "sample:jcl-POSTTRAN-norm",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-005",
+      "path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+      "source_hash": "sample:csd-CARDDEMO",
+      "normalized_source_hash": "sample:csd-CARDDEMO-norm",
+      "encoding": "utf-8",
+      "language": "CSD",
+      "parse_status": "ok"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-001",
+      "type": "INCLUDES",
+      "from": "program:COSGN00C",
+      "to": "copybook:CSUSR01Y",
+      "confidence": 1.0,
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-002",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 31,
+          "end_line": 31,
+          "snippet": "       COPY CSUSR01Y.",
+          "role": "use-site",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        }
+      ],
+      "attributes": {
+        "replacing_terms": null,
+        "fd_context": false
+      }
+    },
+    {
+      "id": "edge-002",
+      "type": "IS_TRANSACTION_FOR",
+      "from": "transaction:CC00",
+      "to": "program:COSGN00C",
+      "confidence": 1.0,
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 378,
+          "end_line": 379,
+          "snippet": " DEFINE TRANSACTION(CC00) GROUP(CARDDEMO)\n        PROGRAM(COSGN00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)",
+          "role": "binding",
+          "source_file_id": "sf-005",
+          "source_hash": "sample:csd-CARDDEMO"
+        }
+      ]
+    },
+    {
+      "id": "edge-003",
+      "type": "SENDS_MAP",
+      "from": "program:COSGN00C",
+      "to": "bms-map:COSGN00/COSGN0A",
+      "confidence": 1.0,
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-016",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 114,
+          "end_line": 120,
+          "snippet": "           EXEC CICS SEND\n                     MAP('COSGN0A')\n                     MAPSET('COSGN00')\n                     FROM(COSGN0AO)\n                     ERASE\n                     CURSOR\n           END-EXEC.",
+          "role": "use-site",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        }
+      ]
+    },
+    {
+      "id": "edge-004",
+      "type": "INVOKES",
+      "from": "jcl-step:POSTTRAN/STEP15",
+      "to": "program:CBTRN02C",
+      "confidence": 1.0,
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 3,
+          "end_line": 3,
+          "snippet": "//STEP15 EXEC PGM=CBTRN02C",
+          "role": "use-site",
+          "source_file_id": "sf-003",
+          "source_hash": "sample:jcl-POSTTRAN"
+        }
+      ]
+    },
+    {
+      "id": "edge-005",
+      "type": "BINDS_TO",
+      "from": "logical-file:COSGN00C/USRSEC",
+      "to": "dataset:AWS.M2.CARDDEMO.USRSEC.VSAM.KSDS",
+      "confidence": 1.0,
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-RES-002",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 165,
+          "end_line": 165,
+          "snippet": "                            EXEC CICS READ",
+          "role": "use-site (CICS file reference)",
+          "source_file_id": "sf-001",
+          "source_hash": "sample:cbl-COSGN00C"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 88,
+          "end_line": 89,
+          "snippet": " DEFINE FILE(USRSEC) GROUP(CARDDEMO)\n        DSNAME(AWS.M2.CARDDEMO.USRSEC.VSAM.KSDS) RLSACCESS(NO)",
+          "role": "csd-binding",
+          "source_file_id": "sf-005",
+          "source_hash": "sample:csd-CARDDEMO"
+        }
+      ],
+      "attributes": {
+        "dd_name": "USRSEC",
+        "binding_source": "CSD"
+      }
+    }
+  ]
+}

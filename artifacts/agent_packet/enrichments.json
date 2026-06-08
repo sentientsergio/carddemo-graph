@@ -1,0 +1,1260 @@
+{
+  "schema_version": "1.1.0",
+  "extractor_version": "0.1.0",
+  "run_id": "gate3-fulltree-20260529T163009Z",
+  "corpus_hash": "f89baa793cdaff4809b17c2b381cc295a8ec3638cd7333748c8aecdd6564265a",
+  "source_files": [
+    {
+      "id": "sf-001",
+      "path": "corpus/carddemo/stripped/app/cbl/CBACT01C.cbl",
+      "source_hash": "d58fda790cf477002b91759c91beb7cb7cd2152caccd1218f115dbdc075140f4",
+      "normalized_source_hash": "5acb032f8dcdfc9c86ec13ae1fc0722da48b3a90bb31f490add9449122c300b9",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-002",
+      "path": "corpus/carddemo/stripped/app/cbl/CBACT02C.cbl",
+      "source_hash": "1e9a2373883082d89ecf43b6f1e3dcfaaa777281e6bafbe19c5448f689106cec",
+      "normalized_source_hash": "6ee17459283614be0e037b9334450146f4973bbc09db63c01811946938a6e30e",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-003",
+      "path": "corpus/carddemo/stripped/app/cbl/CBACT03C.cbl",
+      "source_hash": "61d47be2d04203584e44b7f2d45f91ebe730c823d28d86927c786f44bce020b0",
+      "normalized_source_hash": "71e2b4586271672a962e9641ec8b8cbabb1d3dc0298e86a8aff94c112272a349",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-004",
+      "path": "corpus/carddemo/stripped/app/cbl/CBACT04C.cbl",
+      "source_hash": "fc5726217d1a30724b2ede4680233354074806fcc5d7b356ef0c73628a9c249d",
+      "normalized_source_hash": "974cbad6e293730feab1829bc9f5ad3430ba1080d2740d2fa3d58d5ad0bf3c16",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-005",
+      "path": "corpus/carddemo/stripped/app/cbl/CBCUS01C.cbl",
+      "source_hash": "c89337ed61069ff20421b24853df20525e35f894440e45725a8fbcf104bafeab",
+      "normalized_source_hash": "3045060f4910e5bec00a7b8e1acbcd2cb754336bb21551048e9d9875bfb768ea",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-006",
+      "path": "corpus/carddemo/stripped/app/cbl/CBEXPORT.cbl",
+      "source_hash": "e3d0d00ec935fa6a5c2f4513cfb06521f257b3eab771053b20b3f71f67815cd2",
+      "normalized_source_hash": "47a4520bfeeaed245b7d1544b5c5b607b16452c582909f9028c1906cacd4cf67",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-007",
+      "path": "corpus/carddemo/stripped/app/cbl/CBIMPORT.cbl",
+      "source_hash": "503c8d60141be49ce9cb866834a9cb7a5c5269447480159017ff35700a4ff59e",
+      "normalized_source_hash": "fc261b06220fb96f4792aff87bc4eeb2d7f505a11e78b0cd9605223c483e0466",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-008",
+      "path": "corpus/carddemo/stripped/app/cbl/CBTRN01C.cbl",
+      "source_hash": "a96f2584bb908123307f69e42fceaf1691620115c784ec63697f7920545e873c",
+      "normalized_source_hash": "cc9a61283b12be1d59bb3a6256bfb0365ef1078814e091eaa5ab1351b97a821b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-009",
+      "path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+      "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+      "normalized_source_hash": "db38d0cfcfd5d6a6886816c4800c28026ab13484b330218047d053a3a36c562d",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-010",
+      "path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+      "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+      "normalized_source_hash": "f454bfc03bbd89cf2ba13a4464685719941c55add686f599158343d13efa030c",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-011",
+      "path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+      "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+      "normalized_source_hash": "9630204c517e7c3fecca7094ba6b67fe12108248895b37688a0ebe98c8a29338",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-012",
+      "path": "corpus/carddemo/stripped/app/cbl/COACTVWC.cbl",
+      "source_hash": "14a4d6444ce937da3c24b79174d9852e3197f04e100eb0ce218ca3138d9a72ce",
+      "normalized_source_hash": "372875626d4771e603c9b57425a3f8a5ea0dd9a6fd522a20ef59fa82ad825029",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-013",
+      "path": "corpus/carddemo/stripped/app/cbl/COADM01C.cbl",
+      "source_hash": "1cd54d079e7c0774c87a1eb0df6a77228015d494335a76de631cb1ffc7333d69",
+      "normalized_source_hash": "f92f491b1d348454c0412141bc02752cefa99b3c1c51ae0771f4a3519c0d5220",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-014",
+      "path": "corpus/carddemo/stripped/app/cbl/COBIL00C.cbl",
+      "source_hash": "4184e6a2288d4bd21f367409cbbeb4b2f9877059bdad697c21191c5978ec7fc5",
+      "normalized_source_hash": "5111ab0f943a35ec82b68caf32471d8caa6969162e6439d4180ee2804495d78e",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-015",
+      "path": "corpus/carddemo/stripped/app/cbl/COBSWAIT.cbl",
+      "source_hash": "d70eb669367120f871de4c7bd9dbd65c5e2869fd8fd247bac8465a719f3200f7",
+      "normalized_source_hash": "36ae3ee2abb85bd27dbb0aa2477ad6554aa7455cc441086720a1f4c66e6b8eac",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-016",
+      "path": "corpus/carddemo/stripped/app/cbl/COCALL01.cbl",
+      "source_hash": "fa3abafc73b0745075f51f5475f240330159747b07b94b7dbac0dd0f925ada96",
+      "normalized_source_hash": "71f3a1d53aefe227a2097fbbd577a57297cd4effeff58f93256e8e58140604d1",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-017",
+      "path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+      "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+      "normalized_source_hash": "d79875effce1e834ac71784934a05ec8ed34d105fce9064303c1257a76fb49d4",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-018",
+      "path": "corpus/carddemo/stripped/app/cbl/COCRDSLC.cbl",
+      "source_hash": "2a2b9e97e8f09ee5f702046d18c911be8cabddd21f90b52eccbd0bb13d3741b8",
+      "normalized_source_hash": "eedaa5119a58ec3690b520fa584debe54022be8d91a7a83f2256bdd31b473545",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-019",
+      "path": "corpus/carddemo/stripped/app/cbl/COCRDUPC.cbl",
+      "source_hash": "8c1ec970e07eacdf90e7bf6c0c8654ffde73a86938ae950eb622c57ff4d70333",
+      "normalized_source_hash": "c3ccbb9e28589615c57b9751778170145f35818dd88656c495dbcde5e0cae51d",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-020",
+      "path": "corpus/carddemo/stripped/app/cbl/COEGG01.cbl",
+      "source_hash": "c94302b9b88480e0b51c1a7ecaa028db763174f7ad8c0b5693670bbb9c2a8e10",
+      "normalized_source_hash": "0f3a7c5a7866c4d02862239e0e34f0b7f5419bad0a86c66f1c148eefcf31a48a",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-021",
+      "path": "corpus/carddemo/stripped/app/cbl/COMEN01C.cbl",
+      "source_hash": "4522015ad11b1141b3b43a0436023f647a309669c494bc1e925d08616a5b4b01",
+      "normalized_source_hash": "470f280bc03ad484fb4bbc191f8e00e694578e373358bae27245a8110be5e6fd",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-022",
+      "path": "corpus/carddemo/stripped/app/cbl/CORPT00C.cbl",
+      "source_hash": "20ead6e93089617795c8746f9043a8ae21d6dbc2082329904f19c4f5d15b3fa3",
+      "normalized_source_hash": "3575c43b70bf16ccfa9a58b203bbb9993e44e41cf598cf3e4f0de4c3ad007f95",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-023",
+      "path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+      "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+      "normalized_source_hash": "c3f9a74963abca66161b8b079da91e5b080158049b0ae2220279a972051cc7f0",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-024",
+      "path": "corpus/carddemo/stripped/app/cbl/COTRN00C.cbl",
+      "source_hash": "a9bd77217b3426799396f8c1cc61b362506b23fd24a1a03eaf792adcdb9f87b7",
+      "normalized_source_hash": "b94384b7cc0dd38f37d66b19e9051d1bc308fee7760e7fdbd439e58fd8f0a7a5",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-025",
+      "path": "corpus/carddemo/stripped/app/cbl/COTRN01C.cbl",
+      "source_hash": "9395a352890e2fd2dec4fcb3005b77e9d38204bffe44cdeb5847b226c22f29e6",
+      "normalized_source_hash": "9e5eca9144005899bd21dac8d126bfb783d132540baf590fcf4557e933be3bb7",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-026",
+      "path": "corpus/carddemo/stripped/app/cbl/COTRN02C.cbl",
+      "source_hash": "0b9e9215c828e6299e4dcc0446ec8328bbd36e674c1f19d22a2a193ddacaf7bf",
+      "normalized_source_hash": "4d19d9a93db5cb194d86f291fda714670e2560613298e95338ff9ee622adf91b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-027",
+      "path": "corpus/carddemo/stripped/app/cbl/COUSR00C.cbl",
+      "source_hash": "7cffe56472daad5225c48696a117e0bc7cf8a7aa29afb152954cc1bf85f0ffa7",
+      "normalized_source_hash": "b02d6a7cdb7252bb7b09dcd86cf512a3e724c9aedb2f416249dc24f916fe35d5",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-028",
+      "path": "corpus/carddemo/stripped/app/cbl/COUSR01C.cbl",
+      "source_hash": "9e251e7e81de9602a11e51357ffb688b2c3cd8f42b1b5d9a658eccfea7aa8dd4",
+      "normalized_source_hash": "4a13a226badbf6f5e59ecd262f51dfffc39da42ca3d6b65ccf9e2d2815e8d8b7",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-029",
+      "path": "corpus/carddemo/stripped/app/cbl/COUSR02C.cbl",
+      "source_hash": "aafe2e1545a1c11cae621bfbbeca1b2b832e4f84ae568be2568b076db18890d2",
+      "normalized_source_hash": "dcf459d87e54f59040328a7b4b66802fbeceacbaad067aeb09b03e212a667036",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-030",
+      "path": "corpus/carddemo/stripped/app/cbl/COUSR03C.cbl",
+      "source_hash": "c9d89be4bbdd95c213a32fbfbf99c059fa7e86267141885bffe22833cda9b4e6",
+      "normalized_source_hash": "ce10544e6b02e9d549b398877646938f315a8a7e4a33ca46e68200b786774232",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-031",
+      "path": "corpus/carddemo/stripped/app/cbl/CSUTLDTC.cbl",
+      "source_hash": "5d8b10cb9bf761be807fd175a9c50d9de1817fb376b126f5a33a1b93e09a2811",
+      "normalized_source_hash": "30538cb9fe6afb78c4ae7a9da3840d54a8bfc3df398803738ecc39302e2adad0",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-032",
+      "path": "corpus/carddemo/stripped/app/cbl/CBSTM03A.CBL",
+      "source_hash": "de4448c36c3b7a54f8d7054eb8003dcb471b9a7fb6b0f72e09ca1b2decc92e5c",
+      "normalized_source_hash": "c2713f251ee44b8371a0b7a49046f0009d9fe43b638e1471e995ef9e2a6b623d",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-033",
+      "path": "corpus/carddemo/stripped/app/cbl/CBSTM03B.CBL",
+      "source_hash": "04433adde90e7a8577b976aea33e2c3a82eaabe3e3f149273f205d1b91f3b01d",
+      "normalized_source_hash": "9ae5c093268d16062bc1257159439892297d93f7833c672e2c4f099d0fe0d241",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-034",
+      "path": "corpus/carddemo/stripped/app/cpy/COADM02Y.cpy",
+      "source_hash": "d20e07d8351ab09d9473b96ed131397cbf952989dda55eaa1998784c16d19a36",
+      "normalized_source_hash": "1c8f65bee9e02cf1722c8be22cbf8c8db7aecd61db6bd4073baaf2e073e9d818",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-035",
+      "path": "corpus/carddemo/stripped/app/cpy/COCOM01Y.cpy",
+      "source_hash": "ea1d72bbe3a486011a14c4fba9d586ab030049d21be1322684b89e869ebb416c",
+      "normalized_source_hash": "ed926f3a359e78a196296aa82cbdfc1ab86ed508618c1c92c826ec25f6a1126f",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-036",
+      "path": "corpus/carddemo/stripped/app/cpy/CODATECN.cpy",
+      "source_hash": "42095633ff952362788aebfb40cd70486e0b427710fc26ead713f7cc92c9f44c",
+      "normalized_source_hash": "50706378bc5fecb30aeb13cf0269abc1e6badceae0606d2086475f6059ae753b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-037",
+      "path": "corpus/carddemo/stripped/app/cpy/COMEN02Y.cpy",
+      "source_hash": "d8e0ad607dff4110add2d1f63cd5534963294209b011d2ee131ce4aa344b6da1",
+      "normalized_source_hash": "990e577ed10499570ec52251c9103ba902550b0086dcb8bdbd667dc4dfca1a19",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-038",
+      "path": "corpus/carddemo/stripped/app/cpy/COTTL01Y.cpy",
+      "source_hash": "a5b2f6caeb13210ed6a9b92ac6d4f6d6909e6ccbf6e99b17267bd155f31c6cc1",
+      "normalized_source_hash": "00f2671a7283066131dbf14843ff702c443bede41529baf9a24c8347fd8a9150",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-039",
+      "path": "corpus/carddemo/stripped/app/cpy/CSDAT01Y.cpy",
+      "source_hash": "992916a355e4beb3c2f9a1a55154a56b45a01b2e7f904ef13bf9756663c8cab9",
+      "normalized_source_hash": "54c5ff23bfbdb736da40d3059c36a7c621d758375e120a057680aabc2221c9a1",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-040",
+      "path": "corpus/carddemo/stripped/app/cpy/CSLKPCDY.cpy",
+      "source_hash": "9938bbd53e06ae0c0deaa6793576bef0486c346200b3e5a08c8db05229cb9e7d",
+      "normalized_source_hash": "64f62feef06fb00bee7b5e2e6676ed8f99db412773d75d8f9cabc5acc7148a4b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-041",
+      "path": "corpus/carddemo/stripped/app/cpy/CSMSG01Y.cpy",
+      "source_hash": "119f14da8c36bd49407da31c076557835cbf5bfa3af9fb12cba8ecbd51785b64",
+      "normalized_source_hash": "5cbdccc33c4e738d5ec7408af0faf9785333ed9adfe8321ffe0252bfe584928a",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-042",
+      "path": "corpus/carddemo/stripped/app/cpy/CSMSG02Y.cpy",
+      "source_hash": "e2f95d1ddec77dc8c55b97be9e975c71189f9026433fdb9b8414f6db8adc8329",
+      "normalized_source_hash": "53a3f13e2ec94a75541cf9cddb0cc45fe9082f7b19ac45cfbeba0ce906ab1f9d",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-043",
+      "path": "corpus/carddemo/stripped/app/cpy/CSSETATY.cpy",
+      "source_hash": "2b8546a4cb5f3a1bb651737124b4433b5bf42216a776e0b64632a824d0e6ba21",
+      "normalized_source_hash": "716ee249bc356549169bf9da1f2b55ca9de0fa1a55daab0c96e3044af0a10233",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-044",
+      "path": "corpus/carddemo/stripped/app/cpy/CSSTRPFY.cpy",
+      "source_hash": "8a4283955e3675473b7847debb95adfc9e6fbdcaba0fea75f6aab3b00b6630ba",
+      "normalized_source_hash": "d0f87917039a4be8d7682df3fdda372bd29eda06a30ddec46f2f079326c24265",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-045",
+      "path": "corpus/carddemo/stripped/app/cpy/CSUSR01Y.cpy",
+      "source_hash": "77b0128e484217323c2cb94a9f32fd71ed83f3ef1bda21ed01af2c1d5e6375ed",
+      "normalized_source_hash": "f65f3bb9641f32e4254701f07273fc8c3c79828960fb7a292482a640e17eb212",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-046",
+      "path": "corpus/carddemo/stripped/app/cpy/CSUTLDPY.cpy",
+      "source_hash": "ce3df07090d332ece26d3837edbf54891359c87f5bf11ac7610a637afe0bcc42",
+      "normalized_source_hash": "3ca2a42be497d14d2ee86bda28d57a77892007a2eb5c2016b8246258c54ab956",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-047",
+      "path": "corpus/carddemo/stripped/app/cpy/CSUTLDWY.cpy",
+      "source_hash": "b37e482762dfe83cb37018bbc7beb5217d73a67c35fd34e6ae0db6fecb73e8df",
+      "normalized_source_hash": "d3b4b33a13de5146f1fe8b426a36cf70d9b81573f83d6188633cb399b9e25cea",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-048",
+      "path": "corpus/carddemo/stripped/app/cpy/CUSTREC.cpy",
+      "source_hash": "75d193d615ffd7b5a90d1a369d88b6db192319416bfd4150611be7a67f273fb6",
+      "normalized_source_hash": "ea4eb1814bae0838287a257c50e17ada912c3bac5fec2883a539628ee2bcebfb",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-049",
+      "path": "corpus/carddemo/stripped/app/cpy/CVACT01Y.cpy",
+      "source_hash": "2fa9aee2a4b44fb2a1b086b66003139c798c9af260eae71693fead9505a2fde7",
+      "normalized_source_hash": "f8b59b759269b0b97aa277b4dd5fa1c7ab373bf88df1a09b0986f8b6c88e512b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-050",
+      "path": "corpus/carddemo/stripped/app/cpy/CVACT02Y.cpy",
+      "source_hash": "64465ea56387441c8b911c9116702ca17e4a1865857373040d83a8ced55c3737",
+      "normalized_source_hash": "bad1d8d9dd56f4d77a6948d930e2a98024d5fcf40b9dc9f86db95ec3407493ee",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-051",
+      "path": "corpus/carddemo/stripped/app/cpy/CVACT03Y.cpy",
+      "source_hash": "ac014f94b0c67d7ff2670c6145aaf5c605cd2a209029b9e8c8fb6891ff4f94d2",
+      "normalized_source_hash": "28c4b3ec6938cf00e2d840759417b158f6c897527cc24215eb21d332c334875b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-052",
+      "path": "corpus/carddemo/stripped/app/cpy/CVCRD01Y.cpy",
+      "source_hash": "49dbd55cdf9e7def539724e0858cb8553e10179e23f82dce59bc81f47b723c7c",
+      "normalized_source_hash": "d7a5596674e6e55a0cb0e09d1d3d9d52b6ae0be7c40cc80c4d0c6dabca0ce02d",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-053",
+      "path": "corpus/carddemo/stripped/app/cpy/CVCUS01Y.cpy",
+      "source_hash": "87eec66ff7c1ce7a68613272ece978dfa58a57d41b7a85640c7562c73e8dab9f",
+      "normalized_source_hash": "cad93a5945b041a85df1cb43dc60bcb9518b44aa5778f2ecf8516c98642af29b",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-054",
+      "path": "corpus/carddemo/stripped/app/cpy/CVEGG01Y.cpy",
+      "source_hash": "d2339225dc93ee36ae5b8a1795ccb186ea46607c6a4f4d7e2dc972327577ea86",
+      "normalized_source_hash": "5930215ed5e55f6ec07d40e2a8c8fc932f359f94d99210cf846d0e681105e7bb",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-055",
+      "path": "corpus/carddemo/stripped/app/cpy/CVEXPORT.cpy",
+      "source_hash": "4143088bd12718e69da1ac2bc222f7b3bd40cf9a5971ce897ebebf72d7a64149",
+      "normalized_source_hash": "bac512305985df50e2b2341cb42c79b3918039addf0bcd4027469c781db38e38",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-056",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA01Y.cpy",
+      "source_hash": "d44f199a82d27f80215eaa67c68487a64beda28af4e74f9f4d3f9940f790da98",
+      "normalized_source_hash": "28f986cd8c5e37d2829ef829e4617106d975fd06e64820a2df3153de3b93e292",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-057",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA02Y.cpy",
+      "source_hash": "444779bdfbbd9b51bdf271fbbf323d384555ada769aa60ee196628525233c12e",
+      "normalized_source_hash": "0e4839c0b33ab436dcf7e5946e17f5699e26f723b9aa08b4ccaf8f8bc4467925",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-058",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA03Y.cpy",
+      "source_hash": "c078982d3f4138bb7f20bc1c3cc75a133eef498607716be4ede7436d00e2ed16",
+      "normalized_source_hash": "6365202f30f2ad8b9c210b38967b3caacc157aaae324724ba01c9e65cea5d39a",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-059",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA04Y.cpy",
+      "source_hash": "e987d66c17cad688b97794917581a61b8d11be7181c1acab3c0e7692c059c67a",
+      "normalized_source_hash": "10c5e4ac6d1135d75c953cb55c0bff6c8f14f4b2a4d3374db9c36170a8b15c86",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-060",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA05Y.cpy",
+      "source_hash": "7dd943e9bc43371828a170a85d18eb8f4ce4d876c37ac9722816736b25fae384",
+      "normalized_source_hash": "829a4af8d739fbbded01248c47fdb4d301c2cfaa8cf33e0557fc2b21a3354a23",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-061",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA06Y.cpy",
+      "source_hash": "e0f4f9d46acc0fa069508c7005c109011f390ab3f023d95d0131a18223c88d4d",
+      "normalized_source_hash": "7e2b5328a62edf8171836a07aefc44611e51f40cd5f81f780047bea307474606",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-062",
+      "path": "corpus/carddemo/stripped/app/cpy/CVTRA07Y.cpy",
+      "source_hash": "3eefb46f1ade60586d9c039572b4616b9144b3e208db131de1be24ba5bce33c4",
+      "normalized_source_hash": "f13ef81a9e9beaf4e44e0f1622702050c7c62654b28543dc9e1c3e2890206f18",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-063",
+      "path": "corpus/carddemo/stripped/app/cpy/UNUSED1Y.cpy",
+      "source_hash": "1e3bef0d8afcd8cc15ba4e8e48ae821bf1183d0f220aa214ee1230fadaf7462d",
+      "normalized_source_hash": "640718277775f52031b36cfaeb8ca7e242d3deeb2fb9dc064d12be7bd4bc3907",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-064",
+      "path": "corpus/carddemo/stripped/app/cpy/COSTM01.CPY",
+      "source_hash": "dc655466b265584f110f7ecd9189651f6eb7249a10c0e6a0620e12f5b12dfd56",
+      "normalized_source_hash": "0157fc27809f271daac6b5f1902f9f039c06368afd1285e032a8af50a1862b92",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-065",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COACTUP.CPY",
+      "source_hash": "8d48e5ca1b709ff2ce055c46d065a1e18a833f78d7ed4cebf031244c7e9dd9ec",
+      "normalized_source_hash": "0e26f04381638ef44522ce59b3048dace8544c481b04dc78b16fee99306c65f0",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-066",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COACTVW.CPY",
+      "source_hash": "066159767cf0541be2da1072333cdaffe9889c3896483c6a8ef7c548a9d6b882",
+      "normalized_source_hash": "3cfc2ccdeef9f914bf8073e31808efc279f0a444e522e0dacf9f85df25a00e1a",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-067",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COADM01.CPY",
+      "source_hash": "2fe5e6db8779cff8dd66d28e4019c58bae428337c7a5ac2655ecbc0bcf3b10e2",
+      "normalized_source_hash": "b8cb6127c3391e6f50b40af7d3740715ae6d2ac9d208eaf06da4b96f63e421a3",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-068",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COBIL00.CPY",
+      "source_hash": "3c17445ced0abbc2bbc4568de1e847600e46ed3f4ad54c4744e041d96584ef4e",
+      "normalized_source_hash": "083b7bf61c3dc39767ee480e10e2649b4ec862d1e41ccfe75cf73947d9586bbd",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-069",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COCRDLI.CPY",
+      "source_hash": "d7b491076a97cea4b5b752d3456b456968b5c45bc1ed9aaed521a05ea7217e60",
+      "normalized_source_hash": "f9b1aaa0a5ce8acb952f744322ffc483dd92d3c4ec46a96ef618a6f5f007e7d8",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-070",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COCRDSL.CPY",
+      "source_hash": "5d4e8da8d6dae6066e45185b8f609182d2d60c7e95f9d4ddd70404dfe1d357fb",
+      "normalized_source_hash": "574008ab0ba3995a6fd1045f19d4d08c932fa1e255e7914cb53485bc46453165",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-071",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COCRDUP.CPY",
+      "source_hash": "62a2f06e55366ae1a85fd624d0d6776e6bd392bd272cfdfac4283dd4e68be6bd",
+      "normalized_source_hash": "fe210a5479c7c214f4a00199ad5a14c7b66a47a720c3bf750b5e81b936cb58c4",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-072",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COMEN01.CPY",
+      "source_hash": "cbcf301bcce49c7e54fb75a6dadb76e98f7d71d191a54737d7f7d60b55af314e",
+      "normalized_source_hash": "00c4029ae1c35ddf1800be44a5125392a715ef5fe31ba53f84a3bb3839fd4c0a",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-073",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/CORPT00.CPY",
+      "source_hash": "24dedc78d3385789529b603f1b2094e6dc5a204c68491d1b6b357fc90c294b6f",
+      "normalized_source_hash": "51f7ef76b3f22b5b103055fc9aae5a3be8f9a14562c7655b9b2111c3287816b8",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-074",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COSGN00.CPY",
+      "source_hash": "9c780cd3dffb1bbd23c72d5dd94b59c36d23267a7cd0fb78d5e2956d106d3671",
+      "normalized_source_hash": "ad4573c65faf45ee9e666ea3341eb2b7e44893a919bef8236e28ae7d03de9e93",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-075",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COTRN00.CPY",
+      "source_hash": "cb96eac0dd7cb36045d602f324f143b7874fafeb1982ae48c59fdba65c1633b9",
+      "normalized_source_hash": "a830460dd3dae0fbe39b7d0c8f4d1666f05ccdc65827c470f3ce991246f38782",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-076",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COTRN01.CPY",
+      "source_hash": "fc864d0d52a61c98a75e98a155a896396e3f3d79a353f57d4c7f0f4e3d8a072d",
+      "normalized_source_hash": "eda01170ead0749c11340b66ce2748acf8b2e5558449d7c12619c8d840d259c1",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-077",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COTRN02.CPY",
+      "source_hash": "98752325361ed69a9bcbd08ab9fc24ec58398275f692d37316182c2f30fec93d",
+      "normalized_source_hash": "339075aa2fae66d9bcca4806d7a214514dbdafb3494dddd809ab6b8101ccd706",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-078",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COUSR00.CPY",
+      "source_hash": "6d4158f69e39a5793af92a5847ede6b28cd2544e1c4cf7437f8d785a288c26b4",
+      "normalized_source_hash": "7bd125870b1e3f9de5d55c7c22bd63942114042f5bd5f71e4319cc2529a2c1ea",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-079",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COUSR01.CPY",
+      "source_hash": "3e1d5f1cc6bc6b3fa33b848f5513b020d7eeee90e2d27b1a05e4e219ea5d9bec",
+      "normalized_source_hash": "72689ef71b37889e6ee323682eb9de5abd5e630b5f16dd36c9ee2210efa54e91",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-080",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COUSR02.CPY",
+      "source_hash": "04ddd588056d5e2eee406a4143ef035750189c6dc38fd02e6946443eee85894e",
+      "normalized_source_hash": "7e0b87cfa136bdddb5f0cf4c6e22ce3ca0e788dc8ffb3732904f7886a1176574",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-081",
+      "path": "corpus/carddemo/stripped/app/cpy-bms/COUSR03.CPY",
+      "source_hash": "ba3567df9fd93270e4c200215b4de611721bad6928980d5bcdd6443bb58eca23",
+      "normalized_source_hash": "19a24a5f1db3edb22483eadff2334fc0340e1ec0315d2fb6b734c9d506b6f967",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-082",
+      "path": "corpus/carddemo/stripped/app/jcl/ACCTFILE.jcl",
+      "source_hash": "16e92c88cf879baf2db25714ee22cceda9ba925aa35808e79d0015d663a258a4",
+      "normalized_source_hash": "16e92c88cf879baf2db25714ee22cceda9ba925aa35808e79d0015d663a258a4",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-083",
+      "path": "corpus/carddemo/stripped/app/jcl/CARDFILE.jcl",
+      "source_hash": "c0cb1fa17640c8cd9bb2bcfd51d849dcdb90ae0eea2c71227f4c24c54a5397de",
+      "normalized_source_hash": "c0cb1fa17640c8cd9bb2bcfd51d849dcdb90ae0eea2c71227f4c24c54a5397de",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-084",
+      "path": "corpus/carddemo/stripped/app/jcl/CBADMCDJ.jcl",
+      "source_hash": "36a671d4f79631a17001bc0464259d09270678bf7f10e290db45dcacd5593986",
+      "normalized_source_hash": "36a671d4f79631a17001bc0464259d09270678bf7f10e290db45dcacd5593986",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-085",
+      "path": "corpus/carddemo/stripped/app/jcl/CBEXPORT.jcl",
+      "source_hash": "b5c4c81dd82b7df9ea02a14e007afa96f51fd2df8f59928126df153014d32528",
+      "normalized_source_hash": "b5c4c81dd82b7df9ea02a14e007afa96f51fd2df8f59928126df153014d32528",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-086",
+      "path": "corpus/carddemo/stripped/app/jcl/CBIMPORT.jcl",
+      "source_hash": "b7db9465f8a5b2aa7634839f09529e32bb7a9c6906146372600dd922d29c27a6",
+      "normalized_source_hash": "b7db9465f8a5b2aa7634839f09529e32bb7a9c6906146372600dd922d29c27a6",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-087",
+      "path": "corpus/carddemo/stripped/app/jcl/CLOSEFIL.jcl",
+      "source_hash": "3a29ce54044930f6aae19f7418db89b9de50eba79d7f341bf5cb8b72d77f8906",
+      "normalized_source_hash": "3a29ce54044930f6aae19f7418db89b9de50eba79d7f341bf5cb8b72d77f8906",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-088",
+      "path": "corpus/carddemo/stripped/app/jcl/COMBTRAN.jcl",
+      "source_hash": "2a9bf448c1d027d10002b5ea193ed9e254bc6fa7fc7729f1b8326a16741470bc",
+      "normalized_source_hash": "2a9bf448c1d027d10002b5ea193ed9e254bc6fa7fc7729f1b8326a16741470bc",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-089",
+      "path": "corpus/carddemo/stripped/app/jcl/CUSTFILE.jcl",
+      "source_hash": "045858cc9bdcc1f2b7c68ec924767194fd537e094d517737656ce9f9b306c4b5",
+      "normalized_source_hash": "045858cc9bdcc1f2b7c68ec924767194fd537e094d517737656ce9f9b306c4b5",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-090",
+      "path": "corpus/carddemo/stripped/app/jcl/DALYREJS.jcl",
+      "source_hash": "08c28dfcb8831138b75091dec51ccc212686a86d518c0d85766b2751002ca839",
+      "normalized_source_hash": "08c28dfcb8831138b75091dec51ccc212686a86d518c0d85766b2751002ca839",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-091",
+      "path": "corpus/carddemo/stripped/app/jcl/DEFCUST.jcl",
+      "source_hash": "1e6801f792c4f91b40dac347e07e9d875be5514f65e2a22c176f7c1c7942f075",
+      "normalized_source_hash": "1e6801f792c4f91b40dac347e07e9d875be5514f65e2a22c176f7c1c7942f075",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-092",
+      "path": "corpus/carddemo/stripped/app/jcl/DEFGDGB.jcl",
+      "source_hash": "631df286e168ae1b320804b80d289da80ba7e418ae0d0454cbed9909182e0363",
+      "normalized_source_hash": "631df286e168ae1b320804b80d289da80ba7e418ae0d0454cbed9909182e0363",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-093",
+      "path": "corpus/carddemo/stripped/app/jcl/DEFGDGD.jcl",
+      "source_hash": "421de263cef3684730835ed337f1204ccb65cc5b80cb01edd379b2df4e74b54a",
+      "normalized_source_hash": "421de263cef3684730835ed337f1204ccb65cc5b80cb01edd379b2df4e74b54a",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-094",
+      "path": "corpus/carddemo/stripped/app/jcl/DISCGRP.jcl",
+      "source_hash": "294fc52847d355af920db6bd82a1a451f441006f760e5008b7032698c3447c27",
+      "normalized_source_hash": "294fc52847d355af920db6bd82a1a451f441006f760e5008b7032698c3447c27",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-095",
+      "path": "corpus/carddemo/stripped/app/jcl/DUSRSECJ.jcl",
+      "source_hash": "38e8fa94e2ac912ae5ba2745856e0bae55d320cd82e97cf1a5d1ecdb75e2d65a",
+      "normalized_source_hash": "38e8fa94e2ac912ae5ba2745856e0bae55d320cd82e97cf1a5d1ecdb75e2d65a",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-096",
+      "path": "corpus/carddemo/stripped/app/jcl/ESDSRRDS.jcl",
+      "source_hash": "2051861da06e7d517c42cbd676dd93f000b6e5f9a81740015f8c10acfd592eca",
+      "normalized_source_hash": "2051861da06e7d517c42cbd676dd93f000b6e5f9a81740015f8c10acfd592eca",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-097",
+      "path": "corpus/carddemo/stripped/app/jcl/INTCALC.jcl",
+      "source_hash": "d5849f935d9fca209d8b015ad545ddb8c87c5770dae2cc1e91ea367b03fde781",
+      "normalized_source_hash": "d5849f935d9fca209d8b015ad545ddb8c87c5770dae2cc1e91ea367b03fde781",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-098",
+      "path": "corpus/carddemo/stripped/app/jcl/OPENFIL.jcl",
+      "source_hash": "cb9e6b936e55ba74f3b63411ee14e5152841d3d47a1f58bcde5c8212e382ca10",
+      "normalized_source_hash": "cb9e6b936e55ba74f3b63411ee14e5152841d3d47a1f58bcde5c8212e382ca10",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-099",
+      "path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+      "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+      "normalized_source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-100",
+      "path": "corpus/carddemo/stripped/app/jcl/PRTCATBL.jcl",
+      "source_hash": "acc4ab3fe766df5ded9fb304756ac6489e0accf7a822dccdbb732ad041554ef2",
+      "normalized_source_hash": "acc4ab3fe766df5ded9fb304756ac6489e0accf7a822dccdbb732ad041554ef2",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-101",
+      "path": "corpus/carddemo/stripped/app/jcl/READACCT.jcl",
+      "source_hash": "71f4e3d3982be529af2a9ba0c4801d0f401b05c566e2c8ec84015c486a7b6bad",
+      "normalized_source_hash": "71f4e3d3982be529af2a9ba0c4801d0f401b05c566e2c8ec84015c486a7b6bad",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-102",
+      "path": "corpus/carddemo/stripped/app/jcl/READCARD.jcl",
+      "source_hash": "340073e31ce1b5c8f145c571c240e8bfa038712c4ea37eccb0f125767cef488d",
+      "normalized_source_hash": "340073e31ce1b5c8f145c571c240e8bfa038712c4ea37eccb0f125767cef488d",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-103",
+      "path": "corpus/carddemo/stripped/app/jcl/READCUST.jcl",
+      "source_hash": "f59103e181800459002cc6e7074c67b45813a94424a729800565eede591cdf1f",
+      "normalized_source_hash": "f59103e181800459002cc6e7074c67b45813a94424a729800565eede591cdf1f",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-104",
+      "path": "corpus/carddemo/stripped/app/jcl/READXREF.jcl",
+      "source_hash": "c0f6749089adefc7328a7289660b9e777deac10790449b260ef9d42229623aef",
+      "normalized_source_hash": "c0f6749089adefc7328a7289660b9e777deac10790449b260ef9d42229623aef",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-105",
+      "path": "corpus/carddemo/stripped/app/jcl/REPTFILE.jcl",
+      "source_hash": "738b9784c70ea7b8623fcb507b4d37645fae2ebd3f90a1f13686d18af114ae29",
+      "normalized_source_hash": "738b9784c70ea7b8623fcb507b4d37645fae2ebd3f90a1f13686d18af114ae29",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-106",
+      "path": "corpus/carddemo/stripped/app/jcl/TCATBALF.jcl",
+      "source_hash": "6ea6a022a7ceafbc8aacfce103e76dfa671ad7bff1049e3267ea9d55441c4b99",
+      "normalized_source_hash": "6ea6a022a7ceafbc8aacfce103e76dfa671ad7bff1049e3267ea9d55441c4b99",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-107",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANBKP.jcl",
+      "source_hash": "e98045b2eedfa35e1990f389ec5d607b901998f0039ecc35557eba6d4aa6c4d1",
+      "normalized_source_hash": "e98045b2eedfa35e1990f389ec5d607b901998f0039ecc35557eba6d4aa6c4d1",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-108",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANCATG.jcl",
+      "source_hash": "4719e1e3599f5f91b59815a206724067169988b60ed6fd412d3a3663a971ac44",
+      "normalized_source_hash": "4719e1e3599f5f91b59815a206724067169988b60ed6fd412d3a3663a971ac44",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-109",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANFILE.jcl",
+      "source_hash": "36cd67ea1a2f6c6ed52f1afa95d97fd22fadb9cb9cc824cefb28409477a49e0e",
+      "normalized_source_hash": "36cd67ea1a2f6c6ed52f1afa95d97fd22fadb9cb9cc824cefb28409477a49e0e",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-110",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANIDX.jcl",
+      "source_hash": "3a0f47cb3bd7a5882d44158e20276bebde1acf044b03068d8e5b328e89f7e5aa",
+      "normalized_source_hash": "3a0f47cb3bd7a5882d44158e20276bebde1acf044b03068d8e5b328e89f7e5aa",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-111",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+      "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+      "normalized_source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-112",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANTYPE.jcl",
+      "source_hash": "13e05b19552d1129effead800b231617078f36fec5bf138b1bdc033c5310449e",
+      "normalized_source_hash": "13e05b19552d1129effead800b231617078f36fec5bf138b1bdc033c5310449e",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-113",
+      "path": "corpus/carddemo/stripped/app/jcl/WAITSTEP.jcl",
+      "source_hash": "895cc7f9c5ae79a5fe6150b8cd06d2a8cae5b62ce2ada67bc0888733025a58aa",
+      "normalized_source_hash": "895cc7f9c5ae79a5fe6150b8cd06d2a8cae5b62ce2ada67bc0888733025a58aa",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-114",
+      "path": "corpus/carddemo/stripped/app/jcl/XREFFILE.jcl",
+      "source_hash": "359adc4f97461ec0636acd2abc0a420f38cf497346987e1adac8134e36af14d3",
+      "normalized_source_hash": "359adc4f97461ec0636acd2abc0a420f38cf497346987e1adac8134e36af14d3",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-115",
+      "path": "corpus/carddemo/stripped/app/jcl/CREASTMT.JCL",
+      "source_hash": "790e9ee3b05cda39dbd70c95b684bee18cbc0fd33b81d636ca1516754cd9af84",
+      "normalized_source_hash": "790e9ee3b05cda39dbd70c95b684bee18cbc0fd33b81d636ca1516754cd9af84",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-116",
+      "path": "corpus/carddemo/stripped/app/jcl/FTPJCL.JCL",
+      "source_hash": "2f37f49d70512997241516d1cd7d14d9dd74caeac8b76cebea7a2b2fe50c028d",
+      "normalized_source_hash": "2f37f49d70512997241516d1cd7d14d9dd74caeac8b76cebea7a2b2fe50c028d",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-117",
+      "path": "corpus/carddemo/stripped/app/jcl/INTRDRJ1.JCL",
+      "source_hash": "0e26a7f76ff37d3efe088cbfa635ee1894875ef65475c208dbd49277fc7b32b8",
+      "normalized_source_hash": "0e26a7f76ff37d3efe088cbfa635ee1894875ef65475c208dbd49277fc7b32b8",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-118",
+      "path": "corpus/carddemo/stripped/app/jcl/INTRDRJ2.JCL",
+      "source_hash": "e7e8da13cf87989ecec3cca54d70b90457a92eebd591c9fed3842b68b7ba167d",
+      "normalized_source_hash": "e7e8da13cf87989ecec3cca54d70b90457a92eebd591c9fed3842b68b7ba167d",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-119",
+      "path": "corpus/carddemo/stripped/app/jcl/TXT2PDF1.JCL",
+      "source_hash": "6bb609bd63731f98d3452b94cee5b27d10d7a3b65e44058adec27087b078c265",
+      "normalized_source_hash": "6bb609bd63731f98d3452b94cee5b27d10d7a3b65e44058adec27087b078c265",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-120",
+      "path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+      "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+      "normalized_source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+      "encoding": "utf-8",
+      "language": "JCL_PROC",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-121",
+      "path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+      "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+      "normalized_source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+      "encoding": "utf-8",
+      "language": "JCL_PROC",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-122",
+      "path": "corpus/carddemo/stripped/app/bms/COACTUP.bms",
+      "source_hash": "abeeceda791db4ed09cef341a1207b7a57fc68b44f60ca904fe38a278878e495",
+      "normalized_source_hash": "abeeceda791db4ed09cef341a1207b7a57fc68b44f60ca904fe38a278878e495",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-123",
+      "path": "corpus/carddemo/stripped/app/bms/COACTVW.bms",
+      "source_hash": "e73abed234b017d2f3fa0b52f36148e853bcaf51a129990e3a6b609f1cd7c525",
+      "normalized_source_hash": "e73abed234b017d2f3fa0b52f36148e853bcaf51a129990e3a6b609f1cd7c525",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-124",
+      "path": "corpus/carddemo/stripped/app/bms/COADM01.bms",
+      "source_hash": "49c4ded0c57addb86da2b38227078b5ed59d7aeb073bc39362378c465cfa11f3",
+      "normalized_source_hash": "49c4ded0c57addb86da2b38227078b5ed59d7aeb073bc39362378c465cfa11f3",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-125",
+      "path": "corpus/carddemo/stripped/app/bms/COBIL00.bms",
+      "source_hash": "26cc14d43d69c363c4df8edfff58291676fa9f3c84fe0c3812d641cd2837aa1b",
+      "normalized_source_hash": "26cc14d43d69c363c4df8edfff58291676fa9f3c84fe0c3812d641cd2837aa1b",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-126",
+      "path": "corpus/carddemo/stripped/app/bms/COCRDLI.bms",
+      "source_hash": "e368cbb69d073214518093f31fdf49c5ccd722385e0e0ada4244a20f1446c7d7",
+      "normalized_source_hash": "e368cbb69d073214518093f31fdf49c5ccd722385e0e0ada4244a20f1446c7d7",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-127",
+      "path": "corpus/carddemo/stripped/app/bms/COCRDSL.bms",
+      "source_hash": "dc2d7c24f505a8ea29c5f38e0f4aa6a84cc07e88ea0e67da6962ffefc680407c",
+      "normalized_source_hash": "dc2d7c24f505a8ea29c5f38e0f4aa6a84cc07e88ea0e67da6962ffefc680407c",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-128",
+      "path": "corpus/carddemo/stripped/app/bms/COCRDUP.bms",
+      "source_hash": "d8af97c6e27fdce71a70e756d48e5e96a34fe8e055f6a1920e1dd73d79485df7",
+      "normalized_source_hash": "d8af97c6e27fdce71a70e756d48e5e96a34fe8e055f6a1920e1dd73d79485df7",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-129",
+      "path": "corpus/carddemo/stripped/app/bms/COMEN01.bms",
+      "source_hash": "e66cd8ce92ae3427f1b1e1310b67120d35291c378d5bc437050f02905b4d4c90",
+      "normalized_source_hash": "e66cd8ce92ae3427f1b1e1310b67120d35291c378d5bc437050f02905b4d4c90",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-130",
+      "path": "corpus/carddemo/stripped/app/bms/CORPT00.bms",
+      "source_hash": "9e2bc3e44bd31c9205eabe4b247607865581de933f1c5ec1b604483915fdb238",
+      "normalized_source_hash": "9e2bc3e44bd31c9205eabe4b247607865581de933f1c5ec1b604483915fdb238",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-131",
+      "path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+      "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+      "normalized_source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-132",
+      "path": "corpus/carddemo/stripped/app/bms/COTRN00.bms",
+      "source_hash": "9d4f75fdebec74517322577560849ee17642eff66c45fe9e5f17bff97340c54e",
+      "normalized_source_hash": "9d4f75fdebec74517322577560849ee17642eff66c45fe9e5f17bff97340c54e",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-133",
+      "path": "corpus/carddemo/stripped/app/bms/COTRN01.bms",
+      "source_hash": "d07222e1b3347e69e535c59e421ff4dcd201da243797dcb3a17b23851115b6ae",
+      "normalized_source_hash": "d07222e1b3347e69e535c59e421ff4dcd201da243797dcb3a17b23851115b6ae",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-134",
+      "path": "corpus/carddemo/stripped/app/bms/COTRN02.bms",
+      "source_hash": "04d2c66c13c0a0e4749277e7d165e606b47c6f67ca6a880429551d0c933f9b7b",
+      "normalized_source_hash": "04d2c66c13c0a0e4749277e7d165e606b47c6f67ca6a880429551d0c933f9b7b",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-135",
+      "path": "corpus/carddemo/stripped/app/bms/COUSR00.bms",
+      "source_hash": "ff728d9e9322348800bb8326e06ad3cefc182766250542a476a29866925647d7",
+      "normalized_source_hash": "ff728d9e9322348800bb8326e06ad3cefc182766250542a476a29866925647d7",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-136",
+      "path": "corpus/carddemo/stripped/app/bms/COUSR01.bms",
+      "source_hash": "dbd49b7004a8b9a0449fb7c2f8b0d106c27f82d173b67e4fcc0b9fe2f52396f3",
+      "normalized_source_hash": "dbd49b7004a8b9a0449fb7c2f8b0d106c27f82d173b67e4fcc0b9fe2f52396f3",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-137",
+      "path": "corpus/carddemo/stripped/app/bms/COUSR02.bms",
+      "source_hash": "5a3ff09197a2d1793131dde2556de9bfc0136c15a1462734f9b78561312d9b9a",
+      "normalized_source_hash": "5a3ff09197a2d1793131dde2556de9bfc0136c15a1462734f9b78561312d9b9a",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-138",
+      "path": "corpus/carddemo/stripped/app/bms/COUSR03.bms",
+      "source_hash": "da64907ab56c584509ccf847b2b77fb7ba425ee69857a5462201ea7cfed08f12",
+      "normalized_source_hash": "da64907ab56c584509ccf847b2b77fb7ba425ee69857a5462201ea7cfed08f12",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-139",
+      "path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+      "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+      "normalized_source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+      "encoding": "utf-8",
+      "language": "CSD",
+      "parse_status": "ok"
+    }
+  ],
+  "enrichments": []
+}

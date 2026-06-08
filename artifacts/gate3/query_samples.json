@@ -1,0 +1,426 @@
+{
+  "Q1": {
+    "query": "Q1-copybook-impact",
+    "input": {
+      "copybook_id": "copybook:CSUSR01Y"
+    },
+    "direct_includers": [
+      {
+        "program_id": "program:COACTUPC",
+        "program_name": "COACTUPC",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+        "line": 556
+      },
+      {
+        "program_id": "program:COACTVWC",
+        "program_name": "COACTVWC",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COACTVWC.cbl",
+        "line": 189
+      },
+      {
+        "program_id": "program:COADM01C",
+        "program_name": "COADM01C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COADM01C.cbl",
+        "line": 34
+      },
+      {
+        "program_id": "program:COCRDLIC",
+        "program_name": "COCRDLIC",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+        "line": 223
+      },
+      {
+        "program_id": "program:COCRDSLC",
+        "program_name": "COCRDSLC",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COCRDSLC.cbl",
+        "line": 176
+      },
+      {
+        "program_id": "program:COCRDUPC",
+        "program_name": "COCRDUPC",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COCRDUPC.cbl",
+        "line": 295
+      },
+      {
+        "program_id": "program:COMEN01C",
+        "program_name": "COMEN01C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COMEN01C.cbl",
+        "line": 34
+      },
+      {
+        "program_id": "program:COSGN00C",
+        "program_name": "COSGN00C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+        "line": 31
+      },
+      {
+        "program_id": "program:COUSR00C",
+        "program_name": "COUSR00C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR00C.cbl",
+        "line": 57
+      },
+      {
+        "program_id": "program:COUSR01C",
+        "program_name": "COUSR01C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR01C.cbl",
+        "line": 29
+      },
+      {
+        "program_id": "program:COUSR02C",
+        "program_name": "COUSR02C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR02C.cbl",
+        "line": 41
+      },
+      {
+        "program_id": "program:COUSR03C",
+        "program_name": "COUSR03C",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR03C.cbl",
+        "line": 41
+      }
+    ],
+    "transactions": [
+      {
+        "transaction_id": "transaction:CA00",
+        "program_id": "program:COADM01C"
+      },
+      {
+        "transaction_id": "transaction:CAUP",
+        "program_id": "program:COACTUPC"
+      },
+      {
+        "transaction_id": "transaction:CAVW",
+        "program_id": "program:COACTVWC"
+      },
+      {
+        "transaction_id": "transaction:CC00",
+        "program_id": "program:COSGN00C"
+      },
+      {
+        "transaction_id": "transaction:CCDL",
+        "program_id": "program:COCRDSLC"
+      },
+      {
+        "transaction_id": "transaction:CCLI",
+        "program_id": "program:COCRDLIC"
+      },
+      {
+        "transaction_id": "transaction:CCUP",
+        "program_id": "program:COCRDUPC"
+      },
+      {
+        "transaction_id": "transaction:CM00",
+        "program_id": "program:COMEN01C"
+      },
+      {
+        "transaction_id": "transaction:CU00",
+        "program_id": "program:COUSR00C"
+      },
+      {
+        "transaction_id": "transaction:CU01",
+        "program_id": "program:COUSR01C"
+      },
+      {
+        "transaction_id": "transaction:CU02",
+        "program_id": "program:COUSR02C"
+      },
+      {
+        "transaction_id": "transaction:CU03",
+        "program_id": "program:COUSR03C"
+      }
+    ],
+    "maps": [
+      {
+        "program_id": "program:COADM01C",
+        "map_id": "bms-map:COADM01/COADM1A"
+      },
+      {
+        "program_id": "program:COMEN01C",
+        "map_id": "bms-map:COMEN01/COMEN1A"
+      },
+      {
+        "program_id": "program:COSGN00C",
+        "map_id": "bms-map:COSGN00/COSGN0A"
+      },
+      {
+        "program_id": "program:COUSR00C",
+        "map_id": "bms-map:COUSR00/COUSR0A"
+      },
+      {
+        "program_id": "program:COUSR01C",
+        "map_id": "bms-map:COUSR01/COUSR1A"
+      },
+      {
+        "program_id": "program:COUSR02C",
+        "map_id": "bms-map:COUSR02/COUSR2A"
+      },
+      {
+        "program_id": "program:COUSR03C",
+        "map_id": "bms-map:COUSR03/COUSR3A"
+      }
+    ],
+    "related_files": []
+  },
+  "Q2": {
+    "query": "Q2-dataset-access",
+    "input": {
+      "dataset_id": "dataset:AWS.M2.CARDDEMO.USRSEC.VSAM.KSDS"
+    },
+    "program_access": [
+      {
+        "program_id": "program:COSGN00C",
+        "logical_file_id": "logical-file:COSGN00C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "READS",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+        "line": 165
+      },
+      {
+        "program_id": "program:COUSR00C",
+        "logical_file_id": "logical-file:COUSR00C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "STARTS_BROWSE",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR00C.cbl",
+        "line": 521
+      },
+      {
+        "program_id": "program:COUSR00C",
+        "logical_file_id": "logical-file:COUSR00C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "READS",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR00C.cbl",
+        "line": 550
+      },
+      {
+        "program_id": "program:COUSR00C",
+        "logical_file_id": "logical-file:COUSR00C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "READS",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR00C.cbl",
+        "line": 581
+      },
+      {
+        "program_id": "program:COUSR01C",
+        "logical_file_id": "logical-file:COUSR01C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "WRITES",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR01C.cbl",
+        "line": 189
+      },
+      {
+        "program_id": "program:COUSR02C",
+        "logical_file_id": "logical-file:COUSR02C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "READS",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR02C.cbl",
+        "line": 271
+      },
+      {
+        "program_id": "program:COUSR02C",
+        "logical_file_id": "logical-file:COUSR02C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "UPDATES",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR02C.cbl",
+        "line": 306
+      },
+      {
+        "program_id": "program:COUSR03C",
+        "logical_file_id": "logical-file:COUSR03C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "READS",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR03C.cbl",
+        "line": 218
+      },
+      {
+        "program_id": "program:COUSR03C",
+        "logical_file_id": "logical-file:COUSR03C/USRSEC",
+        "dd_name": "USRSEC",
+        "mode": "DELETES",
+        "source_path": "corpus/carddemo/stripped/app/cbl/COUSR03C.cbl",
+        "line": 253
+      }
+    ],
+    "jcl_access": [
+      {
+        "jcl_step": "jcl-step:DUSRSECJ/STEP03",
+        "dd_name": "OUT",
+        "allocation_disposition": "SHR",
+        "source_path": "corpus/carddemo/stripped/app/jcl/DUSRSECJ.jcl",
+        "line": 43
+      }
+    ]
+  },
+  "Q3": {
+    "query": "Q3-transaction-closure",
+    "input": {
+      "transaction_id": "transaction:CC00"
+    },
+    "entry_program": "program:COSGN00C",
+    "reachable_programs": [
+      "program:COADM01C",
+      "program:COMEN01C"
+    ],
+    "unresolved_reaches": []
+  },
+  "Q4": {
+    "query": "Q4-bms-map-surface",
+    "input": {
+      "transaction_id": "transaction:CC00"
+    },
+    "entry_program": "program:COSGN00C",
+    "map_interactions": [
+      {
+        "program_id": "program:COSGN00C",
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "direction": "SENDS_MAP"
+      },
+      {
+        "program_id": "program:COSGN00C",
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "direction": "RECEIVES_MAP"
+      }
+    ],
+    "mapsets": [
+      {
+        "mapset_id": "bms-mapset:COSGN00",
+        "mapset_name": "COSGN00"
+      }
+    ],
+    "field_surface": [
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "CURDATE",
+        "label": "mm/dd/yy"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "CURTIME",
+        "label": "Ahh:mm:ss"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_1",
+        "label": "Tran :"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_10",
+        "label": "|%(1)  THE UNITED STATES OF KICSLAND (1)%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_11",
+        "label": "|%$$              ___       ********  $$%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_12",
+        "label": "|%$    {x}       (o o)                 $%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_13",
+        "label": "|%$     ******  (  V  )      O N E     $%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_14",
+        "label": "|%(1)          ---m-m---             (1)%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_15",
+        "label": "|%%~~~~~~~~~~~ ONE DOLLAR ~~~~~~~~~~~~~%%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_16",
+        "label": "+========================================+"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_17",
+        "label": "Type your User ID and Password, then press ENTE                R:"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_18",
+        "label": "User ID     :"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_2",
+        "label": "Date :"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_20",
+        "label": "(8 Char)"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_21",
+        "label": "Password    :"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_23",
+        "label": "(8 Char)"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_24",
+        "label": " "
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_26",
+        "label": "ENTER=Sign-on  F3=Exit"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_3",
+        "label": "Prog :"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_4",
+        "label": "Time :"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_5",
+        "label": "AppID:"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_6",
+        "label": "SysID:"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_7",
+        "label": "This is a Credit Card Demo Application for Main                frame Modernization"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_8",
+        "label": "+========================================+"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "FILLER_9",
+        "label": "|%%%%%%%  NATIONAL RESERVE NOTE  %%%%%%%%|"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "PASSWD",
+        "label": "________"
+      },
+      {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "field_name": "SYSID",
+        "label": "        "
+      }
+    ]
+  }
+}

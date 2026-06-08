@@ -1,0 +1,91 @@
+diff --git a/cobol/src/CobolSource.java b/cobol/src/CobolSource.java
+index b657f40..21a4c17 100644
+--- a/cobol/src/CobolSource.java
++++ b/cobol/src/CobolSource.java
+@@ -477,6 +477,7 @@ class CobolSource {
+ 			LOGGER.finest("reading from " + fileName);
+ 			LOGGER.finest("writing to " + tmp.getPath());
+ 			PrintWriter out = new PrintWriter(tmp);
++			OriginTracker.begin(tmp);
+ 			Boolean justWriteTheRest = false;
+ 			Boolean butDontWriteThisOne = false;
+ 			ArrayDeque<Boolean> truthiness = new ArrayDeque<>();
+@@ -589,7 +590,7 @@ class CobolSource {
+ 					LOGGER.finest("not writing |" + inLine + "| as it has been processed by a COPY statement");
+ 					butDontWriteThisOne = false;
+ 				} else {
+-					LOGGER.finest("writing  |" + inLine + "|");
++					LOGGER.finest("writing  |" + inLine + "|"); OriginTracker.recordPass(src.getLineNumber());
+ 					out.println(inLine);
+ 				}
+ 				inLine = src.readLine();
+diff --git a/cobol/src/CopyStatement.java b/cobol/src/CopyStatement.java
+index cc3dce2..1368869 100644
+--- a/cobol/src/CopyStatement.java
++++ b/cobol/src/CopyStatement.java
+@@ -206,7 +206,7 @@ public class CopyStatement extends CopyReplaceParent implements CompilerDirectin
+ 		*/
+ 		int startPosn = this.startPositionInLine() - 1;
+ 		this.LOGGER.fine("startPosn = " + startPosn);
+-		out.println(currLine.substring(0, startPosn));
++		OriginTracker.recordPass(this.startLine); out.println(currLine.substring(0, startPosn));
+ 
+ 		String copyFile = null;
+ 		String testCopyFile = this.getCopyFileFull();
+@@ -242,7 +242,7 @@ public class CopyStatement extends CopyReplaceParent implements CompilerDirectin
+ 			if (this.replaceable.size() == 0) {
+ 				List<String> list = 
+ 					Files.readAllLines(Paths.get(copyFile));
+-				for (String line: list) out.println(line);			
++				for (int li = 0; li < list.size(); li++) { OriginTracker.recordCopy(this.getCopyFileFull(), li + 1); out.println(list.get(li)); }			
+ 			} else {
+ 				this.applyReplacingPhrase(out, copyFile, this.replaceable, this.replacement);
+ 			}
+@@ -263,7 +263,7 @@ public class CopyStatement extends CopyReplaceParent implements CompilerDirectin
+ 				outLine = this.CLI.padLeft(lastLine.substring(endPosn), lastLine.length());
+ 			}
+ 		}
+-		this.LOGGER.fine("outLine = |" + outLine + "|");
++		this.LOGGER.fine("outLine = |" + outLine + "|"); OriginTracker.recordPass(this.endLine);
+ 		out.println(outLine);
+ 	}
+ 
+diff --git a/cobol/src/OriginTracker.java b/cobol/src/OriginTracker.java
+new file mode 100644
+index 0000000..36ebcbc
+--- /dev/null
++++ b/cobol/src/OriginTracker.java
+@@ -0,0 +1,33 @@
++import java.io.File;
++import java.io.PrintWriter;
++
++/* Provenance line-map instrumentation (carddemo-graph foundation patch).
++ * Emits, per preprocessing pass, a sidecar file `<temp>.origin` with one record
++ * per output line: "<outLine>\tPASS\t<inputLine>" for a passthrough line (origin =
++ * the input file of THIS pass at <inputLine>), or "<outLine>\tCOPY\t<copybookPath>\t<copyLine>"
++ * for a copybook-spliced line (a ROOT origin). Composing the per-pass sidecars
++ * (final output -> trace PASS links back through prior passes until a COPY/root)
++ * yields the (preprocessed-line -> original file+line) map the Normalize seam needs.
++ * Encapsulated in the MAPA adapter; offered upstream. */
++public final class OriginTracker {
++    private static PrintWriter sidecar = null;
++    private static int outLine = 0;
++
++    public static void begin(File tmp) {
++        if (sidecar != null) { sidecar.flush(); sidecar.close(); }   // close prior pass
++        try { sidecar = new PrintWriter(tmp.getPath() + ".origin"); }
++        catch (Exception e) { sidecar = null; }
++        outLine = 0;
++    }
++    public static void recordPass(int inputLine) {
++        outLine++;
++        if (sidecar != null) { sidecar.println(outLine + "\tPASS\t" + inputLine); sidecar.flush(); }
++    }
++    public static void recordCopy(String copybookPath, int copyLine) {
++        outLine++;
++        if (sidecar != null) { sidecar.println(outLine + "\tCOPY\t" + copybookPath + "\t" + copyLine); sidecar.flush(); }
++    }
++    public static void end() {
++        if (sidecar != null) { sidecar.flush(); sidecar.close(); sidecar = null; }
++    }
++}

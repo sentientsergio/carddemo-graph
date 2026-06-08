@@ -1,0 +1,47 @@
+{
+  "query": "Q1-copybook-impact",
+  "input": {
+    "copybook_id": "copybook:CSUSR01Y"
+  },
+  "direct_includers": [
+    {
+      "program_id": "program:COACTUPC",
+      "program_name": "COACTUPC",
+      "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+      "line": 556
+    },
+    {
+      "program_id": "program:COCRDLIC",
+      "program_name": "COCRDLIC",
+      "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+      "line": 223
+    },
+    {
+      "program_id": "program:COSGN00C",
+      "program_name": "COSGN00C",
+      "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+      "line": 31
+    }
+  ],
+  "transactions": [
+    {
+      "transaction_id": "transaction:CAUP",
+      "program_id": "program:COACTUPC"
+    },
+    {
+      "transaction_id": "transaction:CC00",
+      "program_id": "program:COSGN00C"
+    },
+    {
+      "transaction_id": "transaction:CCLI",
+      "program_id": "program:COCRDLIC"
+    }
+  ],
+  "maps": [
+    {
+      "program_id": "program:COSGN00C",
+      "map_id": "bms-map:COSGN00/COSGN0A"
+    }
+  ],
+  "related_files": []
+}

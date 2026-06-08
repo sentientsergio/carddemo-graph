@@ -1,0 +1,4756 @@
+{
+  "schema_version": "1.0.0",
+  "extractor_version": "0.1.0",
+  "run_id": "gate2-pilot-20260513T160445Z",
+  "corpus_hash": "13564b68efa4e366708b72238477cde2fd2d7c1dfa38aded3aadda92e60a7fb6",
+  "source_files": [
+    {
+      "id": "sf-001",
+      "path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+      "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+      "normalized_source_hash": "c3f9a74963abca66161b8b079da91e5b080158049b0ae2220279a972051cc7f0",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-002",
+      "path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+      "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+      "normalized_source_hash": "9630204c517e7c3fecca7094ba6b67fe12108248895b37688a0ebe98c8a29338",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-003",
+      "path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+      "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+      "normalized_source_hash": "d79875effce1e834ac71784934a05ec8ed34d105fce9064303c1257a76fb49d4",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-004",
+      "path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+      "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+      "normalized_source_hash": "db38d0cfcfd5d6a6886816c4800c28026ab13484b330218047d053a3a36c562d",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-005",
+      "path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+      "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+      "normalized_source_hash": "f454bfc03bbd89cf2ba13a4464685719941c55add686f599158343d13efa030c",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-006",
+      "path": "corpus/carddemo/stripped/app/cbl/CSUTLDTC.cbl",
+      "source_hash": "5d8b10cb9bf761be807fd175a9c50d9de1817fb376b126f5a33a1b93e09a2811",
+      "normalized_source_hash": "30538cb9fe6afb78c4ae7a9da3840d54a8bfc3df398803738ecc39302e2adad0",
+      "encoding": "utf-8",
+      "language": "COBOL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-007",
+      "path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+      "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+      "normalized_source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-008",
+      "path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+      "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+      "normalized_source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+      "encoding": "utf-8",
+      "language": "JCL",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-009",
+      "path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+      "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+      "normalized_source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+      "encoding": "utf-8",
+      "language": "JCL_PROC",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-010",
+      "path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+      "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+      "normalized_source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+      "encoding": "utf-8",
+      "language": "JCL_PROC",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-011",
+      "path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+      "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+      "normalized_source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+      "encoding": "utf-8",
+      "language": "BMS",
+      "parse_status": "ok"
+    },
+    {
+      "id": "sf-012",
+      "path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+      "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+      "normalized_source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+      "encoding": "utf-8",
+      "language": "CSD",
+      "parse_status": "ok"
+    }
+  ],
+  "entities": [
+    {
+      "id": "program:COSGN00C",
+      "type": "Program",
+      "name": "COSGN00C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 2,
+          "end_line": 2,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       PROGRAM-ID. COSGN00C.",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 249,
+          "end_line": 256,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COSGN00C) GROUP(CARDDEMO)\n DESCRIPTION(LOGIN)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "filename_match": true,
+        "fan_in": 1,
+        "fan_out": 13
+      }
+    },
+    {
+      "id": "program:COACTUPC",
+      "type": "Program",
+      "name": "COACTUPC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 2,
+          "end_line": 3,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       PROGRAM-ID.\n           COACTUPC.",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 173,
+          "end_line": 180,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COACTUPC) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD DEMO ACCOUNT UPDATE)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "filename_match": true,
+        "fan_in": 1,
+        "fan_out": 66
+      }
+    },
+    {
+      "id": "program:COCRDLIC",
+      "type": "Program",
+      "name": "COCRDLIC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 3,
+          "end_line": 4,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "       PROGRAM-ID.                                                              \n           COCRDLIC.                                                            ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 203,
+          "end_line": 210,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COCRDLIC) GROUP(CARDDEMO)\n DESCRIPTION(LIST CARDS)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "filename_match": true,
+        "fan_in": 1,
+        "fan_out": 24
+      }
+    },
+    {
+      "id": "program:CBTRN02C",
+      "type": "Program",
+      "name": "CBTRN02C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 2,
+          "end_line": 2,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "       PROGRAM-ID.    CBTRN02C.                                                 ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-001",
+      "properties": {
+        "filename_match": true,
+        "fan_in": 1,
+        "fan_out": 21
+      }
+    },
+    {
+      "id": "logical-file:CBTRN02C/DALYTRAN-FILE",
+      "type": "LogicalFile",
+      "name": "DALYTRAN-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 8,
+          "end_line": 11,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           SELECT DALYTRAN-FILE ASSIGN TO DALYTRAN                              \n                  ORGANIZATION IS SEQUENTIAL                                    \n                  ACCESS MODE  IS SEQUENTIAL                                    \n                  FILE STATUS  IS DALYTRAN-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "DALYTRAN",
+        "organization": "SEQUENTIAL",
+        "access_mode": "SEQUENTIAL",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN02C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN02C/TRANSACT-FILE",
+      "type": "LogicalFile",
+      "name": "TRANSACT-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 13,
+          "end_line": 17,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           SELECT TRANSACT-FILE ASSIGN TO TRANFILE                              \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-TRANS-ID                                   \n                  FILE STATUS  IS TRANFILE-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "TRANFILE",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-TRANS-ID",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN02C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN02C/XREF-FILE",
+      "type": "LogicalFile",
+      "name": "XREF-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 19,
+          "end_line": 23,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           SELECT XREF-FILE ASSIGN TO   XREFFILE                                \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-XREF-CARD-NUM                              \n                  FILE STATUS  IS XREFFILE-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "XREFFILE",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-XREF-CARD-NUM",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN02C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN02C/DALYREJS-FILE",
+      "type": "LogicalFile",
+      "name": "DALYREJS-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 25,
+          "end_line": 28,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           SELECT DALYREJS-FILE ASSIGN TO DALYREJS                              \n                  ORGANIZATION IS SEQUENTIAL                                    \n                  ACCESS MODE  IS SEQUENTIAL                                    \n                  FILE STATUS  IS DALYREJS-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "DALYREJS",
+        "organization": "SEQUENTIAL",
+        "access_mode": "SEQUENTIAL",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN02C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN02C/ACCOUNT-FILE",
+      "type": "LogicalFile",
+      "name": "ACCOUNT-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 30,
+          "end_line": 34,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           SELECT ACCOUNT-FILE ASSIGN TO ACCTFILE                               \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-ACCT-ID                                    \n                  FILE STATUS  IS ACCTFILE-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "ACCTFILE",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-ACCT-ID",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN02C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN02C/TCATBAL-FILE",
+      "type": "LogicalFile",
+      "name": "TCATBAL-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 36,
+          "end_line": 40,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           SELECT TCATBAL-FILE ASSIGN TO TCATBALF                               \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-TRAN-CAT-KEY                               \n                  FILE STATUS  IS TCATBALF-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "TCATBALF",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-TRAN-CAT-KEY",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN02C"
+      }
+    },
+    {
+      "id": "program:CBTRN03C",
+      "type": "Program",
+      "name": "CBTRN03C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 2,
+          "end_line": 2,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "       PROGRAM-ID.    CBTRN03C.                                                 ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-001",
+      "properties": {
+        "filename_match": true,
+        "fan_in": 2,
+        "fan_out": 18
+      }
+    },
+    {
+      "id": "logical-file:CBTRN03C/TRANSACT-FILE",
+      "type": "LogicalFile",
+      "name": "TRANSACT-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 8,
+          "end_line": 10,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "           SELECT TRANSACT-FILE ASSIGN TO TRANFILE                              \n                  ORGANIZATION IS SEQUENTIAL                                    \n                  FILE STATUS  IS TRANFILE-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "TRANFILE",
+        "organization": "SEQUENTIAL",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN03C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN03C/XREF-FILE",
+      "type": "LogicalFile",
+      "name": "XREF-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 12,
+          "end_line": 16,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "           SELECT XREF-FILE ASSIGN TO CARDXREF                                  \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-XREF-CARD-NUM                              \n                  FILE STATUS  IS CARDXREF-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "CARDXREF",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-XREF-CARD-NUM",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN03C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN03C/TRANTYPE-FILE",
+      "type": "LogicalFile",
+      "name": "TRANTYPE-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 18,
+          "end_line": 22,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "           SELECT TRANTYPE-FILE ASSIGN TO TRANTYPE                              \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-TRAN-TYPE                                  \n                  FILE STATUS  IS TRANTYPE-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "TRANTYPE",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-TRAN-TYPE",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN03C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN03C/TRANCATG-FILE",
+      "type": "LogicalFile",
+      "name": "TRANCATG-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 24,
+          "end_line": 28,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "           SELECT TRANCATG-FILE ASSIGN TO TRANCATG                              \n                  ORGANIZATION IS INDEXED                                       \n                  ACCESS MODE  IS RANDOM                                        \n                  RECORD KEY   IS FD-TRAN-CAT-KEY                               \n                  FILE STATUS  IS TRANCATG-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "TRANCATG",
+        "organization": "INDEXED",
+        "access_mode": "RANDOM",
+        "record_key": "FD-TRAN-CAT-KEY",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN03C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN03C/REPORT-FILE",
+      "type": "LogicalFile",
+      "name": "REPORT-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 30,
+          "end_line": 32,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "           SELECT REPORT-FILE ASSIGN TO TRANREPT                                \n                  ORGANIZATION IS SEQUENTIAL                                    \n                  FILE STATUS  IS TRANREPT-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "TRANREPT",
+        "organization": "SEQUENTIAL",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN03C"
+      }
+    },
+    {
+      "id": "logical-file:CBTRN03C/DATE-PARMS-FILE",
+      "type": "LogicalFile",
+      "name": "DATE-PARMS-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 34,
+          "end_line": 36,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "           SELECT DATE-PARMS-FILE ASSIGN TO DATEPARM                            \n                  ORGANIZATION IS SEQUENTIAL                                    \n                  FILE STATUS  IS DATEPARM-STATUS.                              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-005",
+      "properties": {
+        "scope": "batch",
+        "assign_dd": "DATEPARM",
+        "organization": "SEQUENTIAL",
+        "alternate_record_keys": [],
+        "program_id": "program:CBTRN03C"
+      }
+    },
+    {
+      "id": "program:CSUTLDTC",
+      "type": "Program",
+      "name": "CSUTLDTC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CSUTLDTC.cbl",
+          "start_line": 2,
+          "end_line": 2,
+          "source_file_id": "sf-006",
+          "source_hash": "5d8b10cb9bf761be807fd175a9c50d9de1817fb376b126f5a33a1b93e09a2811",
+          "snippet": "       PROGRAM-ID. CSUTLDTC.                                                    ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-COBOL-001",
+      "properties": {
+        "filename_match": true,
+        "fan_in": 0,
+        "fan_out": 2
+      }
+    },
+    {
+      "id": "jcl-job:TRANREPT",
+      "type": "JCLJob",
+      "name": "TRANREPT",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 1,
+          "end_line": 2,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//TRANREPT JOB 'TRANSACTION REPORT',                                            \n// CLASS=A,MSGCLASS=0,NOTIFY=&SYSUID              ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-001",
+      "properties": {}
+    },
+    {
+      "id": "jcl-step:TRANREPT/STEP05R",
+      "type": "JCLStep",
+      "name": "STEP05R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 4,
+          "end_line": 5,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//STEP05R EXEC PROC=REPROC,                                                     \n// CNTLLIB=AWS.M2.CARDDEMO.CNTL                                                 ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 13,
+          "end_line": 13,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//STEP05R  EXEC PGM=SORT                                                        ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-job:TRANREPT",
+        "step_order": 1
+      }
+    },
+    {
+      "id": "jcl-proc-inv:TRANREPT/STEP05R",
+      "type": "JCLProcInvocation",
+      "name": "STEP05R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 4,
+          "end_line": 5,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//STEP05R EXEC PROC=REPROC,                                                     \n// CNTLLIB=AWS.M2.CARDDEMO.CNTL                                                 ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-003",
+      "properties": {
+        "owner_id": "jcl-job:TRANREPT",
+        "invoked_proc_id": "jcl-proc:REPROC"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 6,
+          "end_line": 7,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//PRC001.FILEIN  DD DISP=SHR,                                                   \n//        DSN=AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS                                ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 8,
+          "end_line": 9,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//TRANFILE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 4,
+          "end_line": 5,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//PRC001.FILEIN  DD DISP=SHR,                                                   \n//        DSN=AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS                                ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 76,
+          "end_line": 87,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(TRANSACT) GROUP(CARDDEMO)\n        DSNAME(AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS) RLSACCESS(NO)\n        LSRPOOLNUM(1) READINTEG(UNCOMMITTED) DSNSHARING(ALLREQS)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TRANSACT.BKUP",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TRANSACT.BKUP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 8,
+          "end_line": 12,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//PRC001.FILEOUT DD DISP=(NEW,CATLG,DELETE),                                    \n//        UNIT=SYSDA,                                                           \n//        DCB=(LRECL=350,RECFM=FB,BLKSIZE=0),                                   \n//        SPACE=(CYL,(1,1),RLSE),                                               \n//        DSN=AWS.M2.CARDDEMO.TRANSACT.BKUP(+1)                                 ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 14,
+          "end_line": 15,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//SORTIN   DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.BKUP(+1)                                ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 6,
+          "end_line": 10,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//PRC001.FILEOUT DD DISP=(NEW,CATLG,DELETE),                                    \n//        UNIT=SYSDA,                                                           \n//        DCB=(LRECL=350,RECFM=FB,BLKSIZE=0),                                   \n//        SPACE=(CYL,(1,1),RLSE),                                               \n//        DSN=AWS.M2.CARDDEMO.TRANSACT.BKUP(+1)                                 ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 12,
+          "end_line": 13,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//SORTIN   DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.BKUP(+1)                                ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "gdg_offset": "+1",
+        "partial": false,
+        "organization": "GDG_BASE"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TRANSACT.DALY",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TRANSACT.DALY",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 27,
+          "end_line": 31,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//SORTOUT  DD DISP=(NEW,CATLG,DELETE),                                          \n//         UNIT=SYSDA,                                                          \n//         DCB=(*.SORTIN),                                                      \n//         SPACE=(CYL,(1,1),RLSE),                                              \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.DALY(+1)                                ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 37,
+          "end_line": 38,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//TRANFILE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.DALY(+1)                                ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 25,
+          "end_line": 29,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//SORTOUT  DD DISP=(NEW,CATLG,DELETE),                                          \n//         UNIT=SYSDA,                                                          \n//         DCB=(*.SORTIN),                                                      \n//         SPACE=(CYL,(1,1),RLSE),                                              \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.DALY(+1)                                ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 35,
+          "end_line": 36,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//TRANFILE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANSACT.DALY(+1)                                ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "gdg_offset": "+1",
+        "partial": false,
+        "organization": "GDG_BASE"
+      }
+    },
+    {
+      "id": "jcl-step:TRANREPT/STEP10R",
+      "type": "JCLStep",
+      "name": "STEP10R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 32,
+          "end_line": 32,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//STEP10R EXEC PGM=CBTRN03C                                                     ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-job:TRANREPT",
+        "step_order": 3
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.LOADLIB",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.LOADLIB",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 33,
+          "end_line": 34,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//STEPLIB  DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.LOADLIB                                          ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 4,
+          "end_line": 5,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//STEPLIB  DD DISP=SHR,                                                         \n//            DSN=AWS.M2.CARDDEMO.LOADLIB                                       ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 31,
+          "end_line": 32,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//STEPLIB  DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.LOADLIB                                          ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "PDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.CARDXREF.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.CARDXREF.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 39,
+          "end_line": 40,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//CARDXREF DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.CARDXREF.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 12,
+          "end_line": 13,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//XREFFILE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.CARDXREF.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 37,
+          "end_line": 38,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//CARDXREF DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.CARDXREF.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 37,
+          "end_line": 49,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(CCXREF) GROUP(CARDDEMO)\n DESCRIPTION(CARD TO ACCOUNT XREF)\n        DSNAME(AWS.M2.CARDDEMO.CARDXREF.VSAM.KSDS) RLSACCESS(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TRANTYPE.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TRANTYPE.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 41,
+          "end_line": 42,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//TRANTYPE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANTYPE.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 39,
+          "end_line": 40,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//TRANTYPE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANTYPE.VSAM.KSDS                               ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TRANCATG.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TRANCATG.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 43,
+          "end_line": 44,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//TRANCATG DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANCATG.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 41,
+          "end_line": 42,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//TRANCATG DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TRANCATG.VSAM.KSDS                               ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.DATEPARM",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.DATEPARM",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 45,
+          "end_line": 46,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//DATEPARM DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.DATEPARM                                         ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 43,
+          "end_line": 44,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//DATEPARM DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.DATEPARM                                         ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "PS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TRANREPT",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TRANREPT",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 47,
+          "end_line": 51,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//TRANREPT DD DISP=(NEW,CATLG,DELETE),                                          \n//         UNIT=SYSDA,                                                          \n//         DCB=(LRECL=133,RECFM=FB,BLKSIZE=0),                                  \n//         SPACE=(CYL,(1,1),RLSE),                                              \n//         DSN=AWS.M2.CARDDEMO.TRANREPT(+1)                                     ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 45,
+          "end_line": 49,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//TRANREPT DD DISP=(NEW,CATLG,DELETE),                                          \n//         UNIT=SYSDA,                                                          \n//         DCB=(LRECL=133,RECFM=FB,BLKSIZE=0),                                  \n//         SPACE=(CYL,(1,1),RLSE),                                              \n//         DSN=AWS.M2.CARDDEMO.TRANREPT(+1)                                     ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "gdg_offset": "+1",
+        "partial": false,
+        "organization": "PS"
+      }
+    },
+    {
+      "id": "jcl-job:POSTTRAN",
+      "type": "JCLJob",
+      "name": "POSTTRAN",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 1,
+          "end_line": 2,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//POSTTRAN JOB 'POSTTRAN',CLASS=A,MSGCLASS=0,                                   \n// NOTIFY=&SYSUID           ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-001",
+      "properties": {}
+    },
+    {
+      "id": "jcl-step:POSTTRAN/STEP15",
+      "type": "JCLStep",
+      "name": "STEP15",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 3,
+          "end_line": 3,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//STEP15 EXEC PGM=CBTRN02C                                                      ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-job:POSTTRAN",
+        "step_order": 1
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.DALYTRAN.PS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.DALYTRAN.PS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 10,
+          "end_line": 11,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//DALYTRAN DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.DALYTRAN.PS                                      ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "PS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.DALYREJS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.DALYREJS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 14,
+          "end_line": 18,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//DALYREJS DD DISP=(NEW,CATLG,DELETE),                                          \n//         UNIT=SYSDA,                                                          \n//         DCB=(RECFM=F,LRECL=430,BLKSIZE=0),                                   \n//         SPACE=(CYL,(1,1),RLSE),                                              \n//         DSN=AWS.M2.CARDDEMO.DALYREJS(+1)                                     ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "gdg_offset": "+1",
+        "partial": false,
+        "organization": "PS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.ACCTDATA.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.ACCTDATA.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 19,
+          "end_line": 20,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//ACCTFILE DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.ACCTDATA.VSAM.KSDS                               ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 1,
+          "end_line": 12,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(ACCTDAT) GROUP(CARDDEMO)\n        DSNAME(AWS.M2.CARDDEMO.ACCTDATA.VSAM.KSDS) RLSACCESS(NO)\n        LSRPOOLNUM(1) READINTEG(UNCOMMITTED) DSNSHARING(ALLREQS)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.TCATBALF.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.TCATBALF.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/POSTTRAN.jcl",
+          "start_line": 21,
+          "end_line": 22,
+          "source_file_id": "sf-008",
+          "source_hash": "945866b6f763289c7b40e2fe4e6bcf2b5a0cf32ab44a6b29a41452be40723847",
+          "snippet": "//TCATBALF DD DISP=SHR,                                                         \n//         DSN=AWS.M2.CARDDEMO.TCATBALF.VSAM.KSDS                               ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "jcl-proc:REPROC",
+      "type": "JCLProc",
+      "name": null,
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 1,
+          "end_line": 1,
+          "source_file_id": "sf-009",
+          "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+          "snippet": "//REPROC PROC                                                                   ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 1,
+          "end_line": 1,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//REPROC PROC                                                                   ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-PROC-001",
+      "properties": {
+        "declared_name": "REPROC",
+        "filename_mismatch": true,
+        "filename": "REPROC.prc"
+      }
+    },
+    {
+      "id": "jcl-step:REPROC/PRC001",
+      "type": "JCLStep",
+      "name": "PRC001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 2,
+          "end_line": 2,
+          "source_file_id": "sf-009",
+          "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+          "snippet": "//PRC001 EXEC PGM=IDCAMS                                                        ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-proc:REPROC",
+        "step_order": 1
+      }
+    },
+    {
+      "id": "dataset:NULLFILE",
+      "type": "Dataset",
+      "name": "NULLFILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 4,
+          "end_line": 5,
+          "source_file_id": "sf-009",
+          "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+          "snippet": "//FILEIN  DD DISP=SHR,                                                          \n//        DSN=NULLFILE                                                          ",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 6,
+          "end_line": 7,
+          "source_file_id": "sf-009",
+          "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+          "snippet": "//FILEOUT DD DISP=SHR,                                                          \n//        DSN=NULLFILE                                                          ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": false,
+        "organization": "UNKNOWN_SENTINEL"
+      }
+    },
+    {
+      "id": "dataset:&CNTLLIB",
+      "type": "Dataset",
+      "name": "&CNTLLIB",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 8,
+          "end_line": 9,
+          "source_file_id": "sf-009",
+          "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+          "snippet": "//SYSIN   DD DISP=SHR,                                                          \n//        DSN=&CNTLLIB(REPROCT)                                                 ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-004",
+      "properties": {
+        "partial": true,
+        "organization": "UNKNOWN_SENTINEL"
+      },
+      "partial": true
+    },
+    {
+      "id": "jcl-step:REPROC/STEP01R",
+      "type": "JCLStep",
+      "name": "STEP01R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 2,
+          "end_line": 3,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//STEP01R EXEC PROC=REPROC,                                                     \n// CNTLLIB=AWS.M2.CARDDEMO.CNTL                                                 ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-proc:REPROC",
+        "step_order": 1
+      }
+    },
+    {
+      "id": "jcl-proc-inv:REPROC/STEP01R",
+      "type": "JCLProcInvocation",
+      "name": "STEP01R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 2,
+          "end_line": 3,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//STEP01R EXEC PROC=REPROC,                                                     \n// CNTLLIB=AWS.M2.CARDDEMO.CNTL                                                 ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-003",
+      "properties": {
+        "owner_id": "jcl-proc:REPROC",
+        "invoked_proc_id": "jcl-proc:REPROC"
+      }
+    },
+    {
+      "id": "jcl-step:REPROC/STEP05R",
+      "type": "JCLStep",
+      "name": "STEP05R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 11,
+          "end_line": 11,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//STEP05R  EXEC PGM=SORT                                                        ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-proc:REPROC",
+        "step_order": 2
+      }
+    },
+    {
+      "id": "jcl-step:REPROC/STEP10R",
+      "type": "JCLStep",
+      "name": "STEP10R",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/TRANREPT.prc",
+          "start_line": 30,
+          "end_line": 30,
+          "source_file_id": "sf-010",
+          "source_hash": "ac89c19715a6abf6793bdc8f9956a174587c4e3fa138204e453e78850f2e80a7",
+          "snippet": "//STEP10R EXEC PGM=CBTRN03C                                                     ",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-JCL-002",
+      "properties": {
+        "owner_id": "jcl-proc:REPROC",
+        "step_order": 3
+      }
+    },
+    {
+      "id": "bms-mapset:COSGN00",
+      "type": "BMSMapset",
+      "name": "COSGN00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 1,
+          "end_line": 7,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "COSGN00 DFHMSD CTRL=(ALARM,FREEKB),                                    -\n               EXTATT=YES,                                             -\n               LANG=COBOL,                                             -\n               MODE=INOUT,                                             -\n               STORAGE=AUTO,                                           -\n               TIOAPFX=YES,                                            -\n               TYPE=&&SYSPARM",
+          "role": "declaration"
+        },
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 141,
+          "end_line": 144,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COSGN00) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/02/19 19:48:31) CHANGETIME(22/02/19 19:48:31)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-BMS-001",
+      "properties": {
+        "lang": "COBOL",
+        "mode": "INOUT",
+        "ctrl": "ALARM,FREEKB"
+      }
+    },
+    {
+      "id": "bms-map:COSGN00/COSGN0A",
+      "type": "BMSMap",
+      "name": "COSGN0A",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 8,
+          "end_line": 10,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "COSGN0A DFHMDI COLUMN=1,                                               -\n               LINE=1,                                                 -\n               SIZE=(24,80)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-002",
+      "properties": {
+        "mapset_id": "bms-mapset:COSGN00",
+        "line_pos": 1,
+        "column_pos": 1,
+        "size_rows": 24,
+        "size_cols": 80
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_1",
+      "type": "BMSField",
+      "name": "FILLER_1",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 11,
+          "end_line": 15,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=6,                                               -\n               POS=(1,1),                                              -\n               INITIAL='Tran :'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 1,
+        "pos_col": 1,
+        "length": 6,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "Tran :",
+        "label": "Tran :",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/TRNNAME",
+      "type": "BMSField",
+      "name": "TRNNAME",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 16,
+          "end_line": 19,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "TRNNAME DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -\n               COLOR=BLUE,                                             -\n               LENGTH=4,                                               -\n               POS=(1,8)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 1,
+        "pos_col": 8,
+        "length": 4,
+        "attrb": "ASKIP,FSET,NORM",
+        "color": "BLUE",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/TITLE01",
+      "type": "BMSField",
+      "name": "TITLE01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 20,
+          "end_line": 23,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "TITLE01 DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -\n               COLOR=YELLOW,                                           -\n               LENGTH=40,                                              -\n               POS=(1,21)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 1,
+        "pos_col": 21,
+        "length": 40,
+        "attrb": "ASKIP,FSET,NORM",
+        "color": "YELLOW",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_2",
+      "type": "BMSField",
+      "name": "FILLER_2",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 24,
+          "end_line": 28,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=6,                                               -\n               POS=(1,64),                                             -\n               INITIAL='Date :'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 1,
+        "pos_col": 64,
+        "length": 6,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "Date :",
+        "label": "Date :",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/CURDATE",
+      "type": "BMSField",
+      "name": "CURDATE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 29,
+          "end_line": 33,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "CURDATE DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -\n               COLOR=BLUE,                                             -\n               LENGTH=8,                                               -\n               POS=(1,71),                                             -\n               INITIAL='mm/dd/yy'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 1,
+        "pos_col": 71,
+        "length": 8,
+        "attrb": "ASKIP,FSET,NORM",
+        "color": "BLUE",
+        "initial_value": "mm/dd/yy",
+        "label": "mm/dd/yy",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_3",
+      "type": "BMSField",
+      "name": "FILLER_3",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 34,
+          "end_line": 38,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=6,                                               -\n               POS=(2,1),                                              -\n               INITIAL='Prog :'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 2,
+        "pos_col": 1,
+        "length": 6,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "Prog :",
+        "label": "Prog :",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/PGMNAME",
+      "type": "BMSField",
+      "name": "PGMNAME",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 39,
+          "end_line": 42,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "PGMNAME DFHMDF ATTRB=(FSET,NORM,PROT),                                 -\n               COLOR=BLUE,                                             -\n               LENGTH=8,                                               -\n               POS=(2,8)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 2,
+        "pos_col": 8,
+        "length": 8,
+        "attrb": "FSET,NORM,PROT",
+        "color": "BLUE",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/TITLE02",
+      "type": "BMSField",
+      "name": "TITLE02",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 43,
+          "end_line": 46,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "TITLE02 DFHMDF ATTRB=(ASKIP,FSET,NORM),                                -\n               COLOR=YELLOW,                                           -\n               LENGTH=40,                                              -\n               POS=(2,21)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 2,
+        "pos_col": 21,
+        "length": 40,
+        "attrb": "ASKIP,FSET,NORM",
+        "color": "YELLOW",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_4",
+      "type": "BMSField",
+      "name": "FILLER_4",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 47,
+          "end_line": 51,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=6,                                               -\n               POS=(2,64),                                             -\n               INITIAL='Time :'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 2,
+        "pos_col": 64,
+        "length": 6,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "Time :",
+        "label": "Time :",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/CURTIME",
+      "type": "BMSField",
+      "name": "CURTIME",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 52,
+          "end_line": 56,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "CURTIME DFHMDF ATTRB=(FSET,NORM,PROT),                                 -\n               COLOR=BLUE,                                             -\n               LENGTH=9,                                               -\n               POS=(2,71),                                             -\n               INITIAL='Ahh:mm:ss'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 2,
+        "pos_col": 71,
+        "length": 9,
+        "attrb": "FSET,NORM,PROT",
+        "color": "BLUE",
+        "initial_value": "Ahh:mm:ss",
+        "label": "Ahh:mm:ss",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_5",
+      "type": "BMSField",
+      "name": "FILLER_5",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 57,
+          "end_line": 61,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(FSET,NORM,PROT),                                 -\n               COLOR=BLUE,                                             -\n               LENGTH=6,                                               -\n               POS=(3,1),                                              -\n               INITIAL='AppID:'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 3,
+        "pos_col": 1,
+        "length": 6,
+        "attrb": "FSET,NORM,PROT",
+        "color": "BLUE",
+        "initial_value": "AppID:",
+        "label": "AppID:",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/APPLID",
+      "type": "BMSField",
+      "name": "APPLID",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 62,
+          "end_line": 65,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "APPLID  DFHMDF ATTRB=(FSET,NORM,PROT),                                 -\n               COLOR=BLUE,                                             -\n               LENGTH=8,                                               -\n               POS=(3,8)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 3,
+        "pos_col": 8,
+        "length": 8,
+        "attrb": "FSET,NORM,PROT",
+        "color": "BLUE",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_6",
+      "type": "BMSField",
+      "name": "FILLER_6",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 66,
+          "end_line": 70,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=6,                                               -\n               POS=(3,64),                                             -\n               INITIAL='SysID:'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 3,
+        "pos_col": 64,
+        "length": 6,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "SysID:",
+        "label": "SysID:",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/SYSID",
+      "type": "BMSField",
+      "name": "SYSID",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 71,
+          "end_line": 75,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "SYSID   DFHMDF ATTRB=(FSET,NORM,PROT),                                 -\n               COLOR=BLUE,                                             -\n               LENGTH=8,                                               -\n               POS=(3,71),                                             -\n               INITIAL='        '",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 3,
+        "pos_col": 71,
+        "length": 8,
+        "attrb": "FSET,NORM,PROT",
+        "color": "BLUE",
+        "initial_value": "        ",
+        "label": "        ",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_7",
+      "type": "BMSField",
+      "name": "FILLER_7",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 76,
+          "end_line": 81,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=NEUTRAL,                                          -\n               LENGTH=66,                                              -\n               POS=(5,6),                                              -\n               INITIAL='This is a Credit Card Demo Application for Main-\n               frame Modernization'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 5,
+        "pos_col": 6,
+        "length": 66,
+        "attrb": "ASKIP,NORM",
+        "color": "NEUTRAL",
+        "initial_value": "This is a Credit Card Demo Application for Main                frame Modernization",
+        "label": "This is a Credit Card Demo Application for Main                frame Modernization",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_8",
+      "type": "BMSField",
+      "name": "FILLER_8",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 82,
+          "end_line": 86,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(7,21),                                             -\n               INITIAL='+========================================+'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 7,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "+========================================+",
+        "label": "+========================================+",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_9",
+      "type": "BMSField",
+      "name": "FILLER_9",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 87,
+          "end_line": 91,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(8,21),                                             -\n               INITIAL='|%%%%%%%  NATIONAL RESERVE NOTE  %%%%%%%%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 8,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%%%%%%%  NATIONAL RESERVE NOTE  %%%%%%%%|",
+        "label": "|%%%%%%%  NATIONAL RESERVE NOTE  %%%%%%%%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_10",
+      "type": "BMSField",
+      "name": "FILLER_10",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 92,
+          "end_line": 96,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(9,21),                                             -\n               INITIAL='|%(1)  THE UNITED STATES OF KICSLAND (1)%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 9,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%(1)  THE UNITED STATES OF KICSLAND (1)%|",
+        "label": "|%(1)  THE UNITED STATES OF KICSLAND (1)%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_11",
+      "type": "BMSField",
+      "name": "FILLER_11",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 97,
+          "end_line": 101,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(10,21),                                            -\n               INITIAL='|%$$              ___       ********  $$%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 10,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%$$              ___       ********  $$%|",
+        "label": "|%$$              ___       ********  $$%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_12",
+      "type": "BMSField",
+      "name": "FILLER_12",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 102,
+          "end_line": 106,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(11,21),                                            -\n               INITIAL='|%$    {x}       (o o)                 $%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 11,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%$    {x}       (o o)                 $%|",
+        "label": "|%$    {x}       (o o)                 $%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_13",
+      "type": "BMSField",
+      "name": "FILLER_13",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 107,
+          "end_line": 111,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(12,21),                                            -\n               INITIAL='|%$     ******  (  V  )      O N E     $%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 12,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%$     ******  (  V  )      O N E     $%|",
+        "label": "|%$     ******  (  V  )      O N E     $%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_14",
+      "type": "BMSField",
+      "name": "FILLER_14",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 112,
+          "end_line": 116,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(13,21),                                            -\n               INITIAL='|%(1)          ---m-m---             (1)%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 13,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%(1)          ---m-m---             (1)%|",
+        "label": "|%(1)          ---m-m---             (1)%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_15",
+      "type": "BMSField",
+      "name": "FILLER_15",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 117,
+          "end_line": 121,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(14,21),                                            -\n               INITIAL='|%%~~~~~~~~~~~ ONE DOLLAR ~~~~~~~~~~~~~%%|'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 14,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "|%%~~~~~~~~~~~ ONE DOLLAR ~~~~~~~~~~~~~%%|",
+        "label": "|%%~~~~~~~~~~~ ONE DOLLAR ~~~~~~~~~~~~~%%|",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_16",
+      "type": "BMSField",
+      "name": "FILLER_16",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 122,
+          "end_line": 126,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=42,                                              -\n               POS=(15,21),                                            -\n               INITIAL='+========================================+'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 15,
+        "pos_col": 21,
+        "length": 42,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "+========================================+",
+        "label": "+========================================+",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_17",
+      "type": "BMSField",
+      "name": "FILLER_17",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 127,
+          "end_line": 132,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=TURQUOISE,                                        -\n               LENGTH=49,                                              -\n               POS=(17,16),                                            -\n               INITIAL='Type your User ID and Password, then press ENTE-\n               R:'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 17,
+        "pos_col": 16,
+        "length": 49,
+        "attrb": "ASKIP,NORM",
+        "color": "TURQUOISE",
+        "initial_value": "Type your User ID and Password, then press ENTE                R:",
+        "label": "Type your User ID and Password, then press ENTE                R:",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_18",
+      "type": "BMSField",
+      "name": "FILLER_18",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 133,
+          "end_line": 137,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=TURQUOISE,                                        -\n               LENGTH=13,                                              -\n               POS=(19,29),                                            -\n               INITIAL='User ID     :'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 19,
+        "pos_col": 29,
+        "length": 13,
+        "attrb": "ASKIP,NORM",
+        "color": "TURQUOISE",
+        "initial_value": "User ID     :",
+        "label": "User ID     :",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/USERID",
+      "type": "BMSField",
+      "name": "USERID",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 138,
+          "end_line": 142,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "USERID  DFHMDF ATTRB=(FSET,IC,NORM,UNPROT),                            -\n               COLOR=GREEN,                                            -\n               HILIGHT=OFF,                                            -\n               LENGTH=8,                                               -\n               POS=(19,43)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 19,
+        "pos_col": 43,
+        "length": 8,
+        "attrb": "FSET,IC,NORM,UNPROT",
+        "color": "GREEN",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_19",
+      "type": "BMSField",
+      "name": "FILLER_19",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 143,
+          "end_line": 146,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=GREEN,                                            -\n               LENGTH=0,                                               -\n               POS=(19,52)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 19,
+        "pos_col": 52,
+        "length": 0,
+        "attrb": "ASKIP,NORM",
+        "color": "GREEN",
+        "label": "",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_20",
+      "type": "BMSField",
+      "name": "FILLER_20",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 147,
+          "end_line": 151,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=8,                                               -\n               POS=(19,52),                                            -\n               INITIAL='(8 Char)'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 19,
+        "pos_col": 52,
+        "length": 8,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "(8 Char)",
+        "label": "(8 Char)",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_21",
+      "type": "BMSField",
+      "name": "FILLER_21",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 152,
+          "end_line": 156,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=TURQUOISE,                                        -\n               LENGTH=13,                                              -\n               POS=(20,29),                                            -\n               INITIAL='Password    :'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 20,
+        "pos_col": 29,
+        "length": 13,
+        "attrb": "ASKIP,NORM",
+        "color": "TURQUOISE",
+        "initial_value": "Password    :",
+        "label": "Password    :",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/PASSWD",
+      "type": "BMSField",
+      "name": "PASSWD",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 157,
+          "end_line": 162,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "PASSWD  DFHMDF ATTRB=(DRK,FSET,UNPROT),                                -\n               COLOR=GREEN,                                            -\n               HILIGHT=OFF,                                            -\n               LENGTH=8,                                               -\n               POS=(20,43),                                            -\n               INITIAL='________'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 20,
+        "pos_col": 43,
+        "length": 8,
+        "attrb": "DRK,FSET,UNPROT",
+        "color": "GREEN",
+        "initial_value": "________",
+        "label": "________",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_22",
+      "type": "BMSField",
+      "name": "FILLER_22",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 163,
+          "end_line": 166,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=GREEN,                                            -\n               LENGTH=0,                                               -\n               POS=(20,52)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 20,
+        "pos_col": 52,
+        "length": 0,
+        "attrb": "ASKIP,NORM",
+        "color": "GREEN",
+        "label": "",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_23",
+      "type": "BMSField",
+      "name": "FILLER_23",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 167,
+          "end_line": 171,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=BLUE,                                             -\n               LENGTH=8,                                               -\n               POS=(20,52),                                            -\n               INITIAL='(8 Char)'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 20,
+        "pos_col": 52,
+        "length": 8,
+        "attrb": "ASKIP,NORM",
+        "color": "BLUE",
+        "initial_value": "(8 Char)",
+        "label": "(8 Char)",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_24",
+      "type": "BMSField",
+      "name": "FILLER_24",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 172,
+          "end_line": 175,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(DRK,UNPROT),                                     -\n               LENGTH=1,                                               -\n               POS=(20,61),                                            -\n               INITIAL=' '",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 20,
+        "pos_col": 61,
+        "length": 1,
+        "attrb": "DRK,UNPROT",
+        "initial_value": " ",
+        "label": " ",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_25",
+      "type": "BMSField",
+      "name": "FILLER_25",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 176,
+          "end_line": 178,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               LENGTH=0,                                               -\n               POS=(20,63)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 20,
+        "pos_col": 63,
+        "length": 0,
+        "attrb": "ASKIP,NORM",
+        "label": "",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/ERRMSG",
+      "type": "BMSField",
+      "name": "ERRMSG",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 179,
+          "end_line": 182,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "ERRMSG  DFHMDF ATTRB=(ASKIP,BRT,FSET),                                 -\n               COLOR=RED,                                              -\n               LENGTH=78,                                              -\n               POS=(23,1)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 23,
+        "pos_col": 1,
+        "length": 78,
+        "attrb": "ASKIP,BRT,FSET",
+        "color": "RED",
+        "label": "",
+        "is_filler": false
+      }
+    },
+    {
+      "id": "bms-field:COSGN00/COSGN0A/FILLER_26",
+      "type": "BMSField",
+      "name": "FILLER_26",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/bms/COSGN00.bms",
+          "start_line": 183,
+          "end_line": 187,
+          "source_file_id": "sf-011",
+          "source_hash": "d85b3371636fdf5c87d2ee3a04d07b0245cf90d801d43a5a64d1d552ce5b653a",
+          "snippet": "        DFHMDF ATTRB=(ASKIP,NORM),                                     -\n               COLOR=YELLOW,                                           -\n               LENGTH=22,                                              -\n               POS=(24,1),                                             -\n               INITIAL='ENTER=Sign-on  F3=Exit'",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-BMS-003",
+      "properties": {
+        "map_id": "bms-map:COSGN00/COSGN0A",
+        "mapset_id": "bms-mapset:COSGN00",
+        "pos_row": 24,
+        "pos_col": 1,
+        "length": 22,
+        "attrb": "ASKIP,NORM",
+        "color": "YELLOW",
+        "initial_value": "ENTER=Sign-on  F3=Exit",
+        "label": "ENTER=Sign-on  F3=Exit",
+        "is_filler": true
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.CARDDATA.VSAM.AIX.PATH",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.CARDDATA.VSAM.AIX.PATH",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 13,
+          "end_line": 24,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(CARDAIX) GROUP(CARDDEMO)\n        DSNAME(AWS.M2.CARDDEMO.CARDDATA.VSAM.AIX.PATH) RLSACCESS(NO)\n        LSRPOOLNUM(1) READINTEG(UNCOMMITTED) DSNSHARING(ALLREQS)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-004",
+      "properties": {
+        "organization": "VSAM_AIX_PATH"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.CARDDATA.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.CARDDATA.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 25,
+          "end_line": 36,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(CARDDAT) GROUP(CARDDEMO)\n        DSNAME(AWS.M2.CARDDEMO.CARDDATA.VSAM.KSDS) RLSACCESS(NO)\n        LSRPOOLNUM(1) READINTEG(UNCOMMITTED) DSNSHARING(ALLREQS)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-004",
+      "properties": {
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.CUSTDATA.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.CUSTDATA.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 50,
+          "end_line": 62,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(CUSTDAT) GROUP(CARDDEMO)\n DESCRIPTION(CARDDEMO CUSTOMER DATA)\n        DSNAME(AWS.M2.CARDDEMO.CUSTDATA.VSAM.KSDS) RLSACCESS(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-004",
+      "properties": {
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.CARDXREF.VSAM.AIX.PATH",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.CARDXREF.VSAM.AIX.PATH",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 63,
+          "end_line": 75,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(CXACAIX) GROUP(CARDDEMO)\n DESCRIPTION(ALTERNATE INDEX TO CCXREF VIA ACCOUNT KEY)\n        DSNAME(AWS.M2.CARDDEMO.CARDXREF.VSAM.AIX.PATH) RLSACCESS(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-004",
+      "properties": {
+        "organization": "VSAM_AIX_PATH"
+      }
+    },
+    {
+      "id": "dataset:AWS.M2.CARDDEMO.USRSEC.VSAM.KSDS",
+      "type": "Dataset",
+      "name": "AWS.M2.CARDDEMO.USRSEC.VSAM.KSDS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 88,
+          "end_line": 99,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE FILE(USRSEC) GROUP(CARDDEMO)\n        DSNAME(AWS.M2.CARDDEMO.USRSEC.VSAM.KSDS) RLSACCESS(NO)\n        LSRPOOLNUM(1) READINTEG(UNCOMMITTED) DSNSHARING(ALLREQS)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-004",
+      "properties": {
+        "organization": "VSAM_KSDS"
+      }
+    },
+    {
+      "id": "bms-mapset:COACTUP",
+      "type": "BMSMapset",
+      "name": "COACTUP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 100,
+          "end_line": 104,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COACTUP) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD ACCOUNT UPDATE MAP)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COACTVW",
+      "type": "BMSMapset",
+      "name": "COACTVW",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 105,
+          "end_line": 109,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COACTVW) GROUP(CARDDEMO)\n DESCRIPTION(VIEW ACCOUNT)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COADM01",
+      "type": "BMSMapset",
+      "name": "COADM01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 110,
+          "end_line": 113,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COADM01) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/03/17 00:19:05) CHANGETIME(22/03/17 00:19:05)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COBIL00",
+      "type": "BMSMapset",
+      "name": "COBIL00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 114,
+          "end_line": 117,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COBIL00) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/06/13 11:16:51) CHANGETIME(22/06/13 11:16:51)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COCRDLI",
+      "type": "BMSMapset",
+      "name": "COCRDLI",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 118,
+          "end_line": 122,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COCRDLI) GROUP(CARDDEMO)\n DESCRIPTION(LIST CARDS)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COCRDSL",
+      "type": "BMSMapset",
+      "name": "COCRDSL",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 123,
+          "end_line": 127,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COCRDSL) GROUP(CARDDEMO)\n DESCRIPTION(SEARCH CARDS)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COCRDUP",
+      "type": "BMSMapset",
+      "name": "COCRDUP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 128,
+          "end_line": 132,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COCRDUP) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD UPDATE MAPSET)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COMEN01",
+      "type": "BMSMapset",
+      "name": "COMEN01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 133,
+          "end_line": 136,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COMEN01) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/03/15 00:25:09) CHANGETIME(22/03/15 00:25:09)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:CORPT00",
+      "type": "BMSMapset",
+      "name": "CORPT00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 137,
+          "end_line": 140,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(CORPT00) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/07/05 17:10:07) CHANGETIME(22/07/05 17:10:07)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COTRN00",
+      "type": "BMSMapset",
+      "name": "COTRN00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 145,
+          "end_line": 148,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COTRN00) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/06/09 20:48:42) CHANGETIME(22/06/09 20:48:42)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COTRN01",
+      "type": "BMSMapset",
+      "name": "COTRN01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 149,
+          "end_line": 152,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COTRN01) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/06/09 21:36:34) CHANGETIME(22/06/09 21:36:34)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COTRN02",
+      "type": "BMSMapset",
+      "name": "COTRN02",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 153,
+          "end_line": 156,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COTRN02) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/07/13 22:39:09) CHANGETIME(22/07/13 22:39:09)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COUSR00",
+      "type": "BMSMapset",
+      "name": "COUSR00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 157,
+          "end_line": 160,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COUSR00) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/06/09 20:20:13) CHANGETIME(22/06/09 20:20:13)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COUSR01",
+      "type": "BMSMapset",
+      "name": "COUSR01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 161,
+          "end_line": 164,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COUSR01) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/05/02 20:11:37) CHANGETIME(22/05/02 20:11:37)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COUSR02",
+      "type": "BMSMapset",
+      "name": "COUSR02",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 165,
+          "end_line": 168,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COUSR02) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/05/03 19:39:17) CHANGETIME(22/05/03 19:39:17)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "bms-mapset:COUSR03",
+      "type": "BMSMapset",
+      "name": "COUSR03",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 169,
+          "end_line": 172,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE MAPSET(COUSR03) GROUP(CARDDEMO)\n        RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO) STATUS(ENABLED)\n        DEFINETIME(22/06/09 20:37:46) CHANGETIME(22/06/09 20:37:46)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-003",
+      "properties": {}
+    },
+    {
+      "id": "program:COACTVWC",
+      "type": "Program",
+      "name": "COACTVWC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 181,
+          "end_line": 188,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COACTVWC) GROUP(CARDDEMO)\n DESCRIPTION(VIEW ACCT)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COADM01C",
+      "type": "Program",
+      "name": "COADM01C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 189,
+          "end_line": 195,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COADM01C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 2,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COBIL00C",
+      "type": "Program",
+      "name": "COBIL00C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 196,
+          "end_line": 202,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COBIL00C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COCRDSEC",
+      "type": "Program",
+      "name": "COCRDSEC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 211,
+          "end_line": 218,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COCRDSEC) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD SEARCH)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COCRDSLC",
+      "type": "Program",
+      "name": "COCRDSLC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 219,
+          "end_line": 226,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COCRDSLC) GROUP(CARDDEMO)\n DESCRIPTION(VIEW CARD DETAIL)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COCRDUPC",
+      "type": "Program",
+      "name": "COCRDUPC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 227,
+          "end_line": 234,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COCRDUPC) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD UPDATE SCREEN)\n        RELOAD(NO) RESIDENT(NO) USAGE(NORMAL) USELPACOPY(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COMEN01C",
+      "type": "Program",
+      "name": "COMEN01C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 235,
+          "end_line": 241,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COMEN01C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 2,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:CORPT00C",
+      "type": "Program",
+      "name": "CORPT00C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 242,
+          "end_line": 248,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(CORPT00C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COTRN00C",
+      "type": "Program",
+      "name": "COTRN00C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 257,
+          "end_line": 263,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COTRN00C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COTRN01C",
+      "type": "Program",
+      "name": "COTRN01C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 264,
+          "end_line": 270,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COTRN01C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COTRN02C",
+      "type": "Program",
+      "name": "COTRN02C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 271,
+          "end_line": 277,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COTRN02C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COUSR00C",
+      "type": "Program",
+      "name": "COUSR00C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 278,
+          "end_line": 284,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COUSR00C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COUSR01C",
+      "type": "Program",
+      "name": "COUSR01C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 285,
+          "end_line": 291,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COUSR01C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COUSR02C",
+      "type": "Program",
+      "name": "COUSR02C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 292,
+          "end_line": 298,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COUSR02C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "program:COUSR03C",
+      "type": "Program",
+      "name": "COUSR03C",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 299,
+          "end_line": 305,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE PROGRAM(COUSR03C) GROUP(CARDDEMO)\n        LANGUAGE(COBOL) RELOAD(NO) RESIDENT(NO) USAGE(NORMAL)\n        USELPACOPY(NO) STATUS(ENABLED) CEDF(YES) DATALOCATION(ANY)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-002",
+      "properties": {
+        "partial_reason": "csd_only_no_source_body",
+        "fan_in": 1,
+        "fan_out": 0
+      },
+      "partial": true
+    },
+    {
+      "id": "transaction:CAUP",
+      "type": "CICSTransaction",
+      "name": "CAUP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 306,
+          "end_line": 316,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CAUP) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD DEMO ACCOUNT UPDATE)\n        PROGRAM(COACTUPC) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "description": "CREDIT CARD DEMO ACCOUNT UPDATE",
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CAVW",
+      "type": "CICSTransaction",
+      "name": "CAVW",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 317,
+          "end_line": 326,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CAVW) GROUP(CARDDEMO)\n        PROGRAM(COACTVWC) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CA00",
+      "type": "CICSTransaction",
+      "name": "CA00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 327,
+          "end_line": 336,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CA00) GROUP(CARDDEMO)\n        PROGRAM(COADM01C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CB00",
+      "type": "CICSTransaction",
+      "name": "CB00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 337,
+          "end_line": 346,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CB00) GROUP(CARDDEMO)\n        PROGRAM(COBIL00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CCDL",
+      "type": "CICSTransaction",
+      "name": "CCDL",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 347,
+          "end_line": 356,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CCDL) GROUP(CARDDEMO)\n        PROGRAM(COCRDSLC) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CCLI",
+      "type": "CICSTransaction",
+      "name": "CCLI",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 357,
+          "end_line": 366,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CCLI) GROUP(CARDDEMO)\n        PROGRAM(COCRDLIC) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CCUP",
+      "type": "CICSTransaction",
+      "name": "CCUP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 367,
+          "end_line": 377,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CCUP) GROUP(CARDDEMO)\n DESCRIPTION(CREDIT CARD UPDATE TRANSACTION)\n        PROGRAM(COCRDUPC) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "description": "CREDIT CARD UPDATE TRANSACTION",
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CC00",
+      "type": "CICSTransaction",
+      "name": "CC00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 378,
+          "end_line": 387,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CC00) GROUP(CARDDEMO)\n        PROGRAM(COSGN00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CDV1",
+      "type": "CICSTransaction",
+      "name": "CDV1",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 388,
+          "end_line": 398,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CDV1) GROUP(CARDDEMO)\n DESCRIPTION(DEVELOPER TRANSACTION - 1)\n        PROGRAM(COCRDSEC) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "description": "DEVELOPER TRANSACTION - 1",
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CM00",
+      "type": "CICSTransaction",
+      "name": "CM00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 399,
+          "end_line": 408,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CM00) GROUP(CARDDEMO)\n        PROGRAM(COMEN01C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CR00",
+      "type": "CICSTransaction",
+      "name": "CR00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 409,
+          "end_line": 418,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CR00) GROUP(CARDDEMO)\n        PROGRAM(CORPT00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CT00",
+      "type": "CICSTransaction",
+      "name": "CT00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 419,
+          "end_line": 428,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CT00) GROUP(CARDDEMO)\n        PROGRAM(COTRN00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CT01",
+      "type": "CICSTransaction",
+      "name": "CT01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 429,
+          "end_line": 438,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CT01) GROUP(CARDDEMO)\n        PROGRAM(COTRN01C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CT02",
+      "type": "CICSTransaction",
+      "name": "CT02",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 439,
+          "end_line": 448,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CT02) GROUP(CARDDEMO)\n        PROGRAM(COTRN02C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CU00",
+      "type": "CICSTransaction",
+      "name": "CU00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 449,
+          "end_line": 458,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CU00) GROUP(CARDDEMO)\n        PROGRAM(COUSR00C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CU01",
+      "type": "CICSTransaction",
+      "name": "CU01",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 459,
+          "end_line": 468,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CU01) GROUP(CARDDEMO)\n        PROGRAM(COUSR01C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CU02",
+      "type": "CICSTransaction",
+      "name": "CU02",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 469,
+          "end_line": 478,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CU02) GROUP(CARDDEMO)\n        PROGRAM(COUSR02C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "transaction:CU03",
+      "type": "CICSTransaction",
+      "name": "CU03",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/csd/CARDDEMO.CSD",
+          "start_line": 479,
+          "end_line": 488,
+          "source_file_id": "sf-012",
+          "source_hash": "28ded93b49e188ae0100d6a964bd921a4de33414662e670b28f19bee41917cdb",
+          "snippet": " DEFINE TRANSACTION(CU03) GROUP(CARDDEMO)\n        PROGRAM(COUSR03C) TWASIZE(0) PROFILE(DFHCICST) STATUS(ENABLED)\n        TASKDATALOC(ANY) TASKDATAKEY(USER) STORAGECLEAR(NO)",
+          "role": "declaration"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-CSD-001",
+      "properties": {
+        "fan_out": 1
+      }
+    },
+    {
+      "id": "logical-file:COSGN00C/USRSEC",
+      "type": "LogicalFile",
+      "name": "USRSEC",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 165,
+          "end_line": 173,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "           EXEC CICS READ\n                DATASET   (WS-USRSEC-FILE)\n                INTO      (SEC-USER-DATA)\n                LENGTH    (LENGTH OF SEC-USER-DATA)\n                RIDFLD    (WS-USER-ID)\n                KEYLENGTH (LENGTH OF WS-USER-ID)\n                RESP      (WS-RESP-CD)\n                RESP2     (WS-REAS-CD)\n           END-EXEC.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-RES-002",
+      "properties": {
+        "scope": "cics",
+        "program_id": "program:COSGN00C",
+        "binding_source": "CSD"
+      }
+    },
+    {
+      "id": "logical-file:COACTUPC/LIT-CARDXREFNAME-ACCT-PATH",
+      "type": "LogicalFile",
+      "name": "LIT-CARDXREFNAME-ACCT-PATH",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 3273,
+          "end_line": 3281,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           EXEC CICS READ\n                DATASET   (LIT-CARDXREFNAME-ACCT-PATH)\n                RIDFLD    (WS-CARD-RID-ACCT-ID-X)\n                KEYLENGTH (LENGTH OF WS-CARD-RID-ACCT-ID-X)\n                INTO      (CARD-XREF-RECORD)\n                LENGTH    (LENGTH OF CARD-XREF-RECORD)\n                RESP      (WS-RESP-CD)\n                RESP2     (WS-REAS-CD)\n           END-EXEC",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-RES-002",
+      "properties": {
+        "scope": "cics",
+        "program_id": "program:COACTUPC",
+        "binding_source": "CSD"
+      }
+    },
+    {
+      "id": "logical-file:COACTUPC/LIT-ACCTFILENAME",
+      "type": "LogicalFile",
+      "name": "LIT-ACCTFILENAME",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 3320,
+          "end_line": 3328,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           EXEC CICS READ\n                DATASET   (LIT-ACCTFILENAME)\n                RIDFLD    (WS-CARD-RID-ACCT-ID-X)\n                KEYLENGTH (LENGTH OF WS-CARD-RID-ACCT-ID-X)\n                INTO      (ACCOUNT-RECORD)\n                LENGTH    (LENGTH OF ACCOUNT-RECORD)\n                RESP      (WS-RESP-CD)\n                RESP2     (WS-REAS-CD)\n           END-EXEC",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-RES-002",
+      "properties": {
+        "scope": "cics",
+        "program_id": "program:COACTUPC",
+        "binding_source": "CSD"
+      }
+    },
+    {
+      "id": "logical-file:COACTUPC/LIT-CUSTFILENAME",
+      "type": "LogicalFile",
+      "name": "LIT-CUSTFILENAME",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 3366,
+          "end_line": 3374,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           EXEC CICS READ\n                DATASET   (LIT-CUSTFILENAME)\n                RIDFLD    (WS-CARD-RID-CUST-ID-X)\n                KEYLENGTH (LENGTH OF WS-CARD-RID-CUST-ID-X)\n                INTO      (CUSTOMER-RECORD)\n                LENGTH    (LENGTH OF CUSTOMER-RECORD)\n                RESP      (WS-RESP-CD)\n                RESP2     (WS-REAS-CD)\n           END-EXEC",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-RES-002",
+      "properties": {
+        "scope": "cics",
+        "program_id": "program:COACTUPC",
+        "binding_source": "CSD"
+      }
+    },
+    {
+      "id": "logical-file:COCRDLIC/LIT-CARD-FILE",
+      "type": "LogicalFile",
+      "name": "LIT-CARD-FILE",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 964,
+          "end_line": 971,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "           EXEC CICS STARTBR                                                    \n                DATASET(LIT-CARD-FILE)                                          \n                RIDFLD(WS-CARD-RID-CARDNUM)                                     \n                KEYLENGTH(LENGTH OF WS-CARD-RID-CARDNUM)                        \n                GTEQ                                                            \n                RESP(WS-RESP-CD)                                                \n                RESP2(WS-REAS-CD)                                               \n           END-EXEC                                                             ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "resolved",
+      "rule_id": "RUL-RES-002",
+      "properties": {
+        "scope": "cics",
+        "program_id": "program:COCRDLIC",
+        "binding_source": "CSD"
+      }
+    },
+    {
+      "id": "copybook:COCOM01Y",
+      "type": "Copybook",
+      "name": "COCOM01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 24,
+          "end_line": 24,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY COCOM01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:COSGN00",
+      "type": "Copybook",
+      "name": "COSGN00",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 26,
+          "end_line": 26,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY COSGN00.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:COTTL01Y",
+      "type": "Copybook",
+      "name": "COTTL01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 28,
+          "end_line": 28,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY COTTL01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:CSDAT01Y",
+      "type": "Copybook",
+      "name": "CSDAT01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 29,
+          "end_line": 29,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY CSDAT01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:CSMSG01Y",
+      "type": "Copybook",
+      "name": "CSMSG01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 30,
+          "end_line": 30,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY CSMSG01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:CSUSR01Y",
+      "type": "Copybook",
+      "name": "CSUSR01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 31,
+          "end_line": 31,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY CSUSR01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:DFHAID",
+      "type": "Copybook",
+      "name": "DFHAID",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 33,
+          "end_line": 33,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY DFHAID.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:DFHBMSCA",
+      "type": "Copybook",
+      "name": "DFHBMSCA",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COSGN00C.cbl",
+          "start_line": 34,
+          "end_line": 34,
+          "source_file_id": "sf-001",
+          "source_hash": "ab8767158c20f1d3840dbd85455407754288534550a430668234e955ec35baf1",
+          "snippet": "       COPY DFHBMSCA.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:CSUTLDWY",
+      "type": "Copybook",
+      "name": "CSUTLDWY",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 130,
+          "end_line": 130,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           COPY 'CSUTLDWY'.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVCRD01Y",
+      "type": "Copybook",
+      "name": "CVCRD01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 533,
+          "end_line": 533,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CVCRD01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 2
+      }
+    },
+    {
+      "id": "copybook:CSLKPCDY",
+      "type": "Copybook",
+      "name": "CSLKPCDY",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 534,
+          "end_line": 534,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CSLKPCDY.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:COACTUP",
+      "type": "Copybook",
+      "name": "COACTUP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 548,
+          "end_line": 548,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY COACTUP.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CSMSG02Y",
+      "type": "Copybook",
+      "name": "CSMSG02Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 554,
+          "end_line": 554,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CSMSG02Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVACT01Y",
+      "type": "Copybook",
+      "name": "CVACT01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 559,
+          "end_line": 559,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CVACT01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 2
+      }
+    },
+    {
+      "id": "copybook:CVACT03Y",
+      "type": "Copybook",
+      "name": "CVACT03Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 561,
+          "end_line": 561,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CVACT03Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 3
+      }
+    },
+    {
+      "id": "copybook:CVCUS01Y",
+      "type": "Copybook",
+      "name": "CVCUS01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 563,
+          "end_line": 563,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CVCUS01Y.",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "unresolved:CDEMO-TO-PROGRAM",
+      "type": "Program",
+      "name": "CDEMO-TO-PROGRAM",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 844,
+          "end_line": 847,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "                   EXEC CICS XCTL\n                        PROGRAM (CDEMO-TO-PROGRAM)\n                        COMMAREA(CARDDEMO-COMMAREA)\n                   END-EXEC",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-006",
+      "partial": true,
+      "properties": {
+        "surface_form": "CDEMO-TO-PROGRAM",
+        "target_type_hint": "Program",
+        "reason": "dynamic_call",
+        "breadcrumb": "CDEMO-TO-PROGRAM",
+        "fan_in": 1,
+        "fan_out": 0
+      }
+    },
+    {
+      "id": "bms-map:LIT-THISMAPSET/LIT-THISMAP",
+      "type": "BMSMap",
+      "name": "LIT-THISMAP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 912,
+          "end_line": 917,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           EXEC CICS RECEIVE MAP(LIT-THISMAP)\n                     MAPSET(LIT-THISMAPSET)\n                     INTO(CACTUPAI)\n                     RESP(WS-RESP-CD)\n                     RESP2(WS-REAS-CD)\n           END-EXEC",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-017"
+      }
+    },
+    {
+      "id": "copybook:CSSETATY",
+      "type": "Copybook",
+      "name": "CSSETATY",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 2881,
+          "end_line": 2884,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           COPY CSSETATY REPLACING\n             ==(TESTVAR1)== BY ==ACCT-STATUS==\n             ==(SCRNVAR2)== BY ==ACSTTUS==\n             ==(MAPNAME3)== BY ==CACTUPA== .",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-003",
+        "reuse_count": 39
+      }
+    },
+    {
+      "id": "bms-map:CCARD-NEXT-MAPSET/CCARD-NEXT-MAP",
+      "type": "BMSMap",
+      "name": "CCARD-NEXT-MAP",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 3215,
+          "end_line": 3222,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "           EXEC CICS SEND MAP(CCARD-NEXT-MAP)\n                          MAPSET(CCARD-NEXT-MAPSET)\n                          FROM(CACTUPAO)\n                          CURSOR\n                          ERASE\n                          FREEKB\n                          RESP(WS-RESP-CD)\n           END-EXEC",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-016"
+      }
+    },
+    {
+      "id": "copybook:CSSTRPFY",
+      "type": "Copybook",
+      "name": "CSSTRPFY",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 3713,
+          "end_line": 3714,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY 'CSSTRPFY'\n           .",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 2
+      }
+    },
+    {
+      "id": "copybook:CSUTLDPY",
+      "type": "Copybook",
+      "name": "CSUTLDPY",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COACTUPC.cbl",
+          "start_line": 3743,
+          "end_line": 3744,
+          "source_file_id": "sf-002",
+          "source_hash": "58ea69d636a466905e1bf72e8430f1a3ed2d60f04562655d09e9ba1a13a1c349",
+          "snippet": "       COPY CSUTLDPY\n           .",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:COCRDLI",
+      "type": "Copybook",
+      "name": "COCRDLI",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 219,
+          "end_line": 219,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "       COPY COCRDLI.                                                            ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVACT02Y",
+      "type": "Copybook",
+      "name": "CVACT02Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 226,
+          "end_line": 226,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "       COPY CVACT02Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "unresolved:LIT-MENUPGM",
+      "type": "Program",
+      "name": "LIT-MENUPGM",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 304,
+          "end_line": 307,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "              EXEC CICS XCTL                                                    \n                        PROGRAM (LIT-MENUPGM)                                   \n                        COMMAREA(CARDDEMO-COMMAREA)                             \n              END-EXEC                                                          ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-006",
+      "partial": true,
+      "properties": {
+        "surface_form": "LIT-MENUPGM",
+        "target_type_hint": "Program",
+        "reason": "dynamic_call",
+        "breadcrumb": "LIT-MENUPGM",
+        "fan_in": 1,
+        "fan_out": 0
+      }
+    },
+    {
+      "id": "unresolved:CCARD-NEXT-PROG",
+      "type": "Program",
+      "name": "CCARD-NEXT-PROG",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 406,
+          "end_line": 409,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "                   EXEC CICS XCTL                                               \n                        PROGRAM (CCARD-NEXT-PROG)                               \n                        COMMAREA(CARDDEMO-COMMAREA)                             \n                   END-EXEC                                                     ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-006",
+      "partial": true,
+      "properties": {
+        "surface_form": "CCARD-NEXT-PROG",
+        "target_type_hint": "Program",
+        "reason": "dynamic_call",
+        "breadcrumb": "CCARD-NEXT-PROG",
+        "fan_in": 2,
+        "fan_out": 0
+      }
+    },
+    {
+      "id": "logical-file:COCRDLIC/TO",
+      "type": "LogicalFile",
+      "name": "TO",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/COCRDLIC.cbl",
+          "start_line": 974,
+          "end_line": 974,
+          "source_file_id": "sf-003",
+          "source_hash": "668b938cb48791f489054c83e379699838c9fb91d5b14af81776ca3a451cef37",
+          "snippet": "           SET MORE-RECORDS-TO-READ   TO TRUE                                   ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-006"
+      }
+    },
+    {
+      "id": "copybook:CVTRA06Y",
+      "type": "Copybook",
+      "name": "CVTRA06Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 79,
+          "end_line": 79,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "       COPY CVTRA06Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-004",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVTRA05Y",
+      "type": "Copybook",
+      "name": "CVTRA05Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 84,
+          "end_line": 84,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "       COPY CVTRA05Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-004",
+        "reuse_count": 2
+      }
+    },
+    {
+      "id": "copybook:CVTRA01Y",
+      "type": "Copybook",
+      "name": "CVTRA01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 103,
+          "end_line": 103,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "       COPY CVTRA01Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-004",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "program:CEE3ABD",
+      "type": "Program",
+      "name": "CEE3ABD",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN02C.cbl",
+          "start_line": 656,
+          "end_line": 656,
+          "source_file_id": "sf-004",
+          "source_hash": "b95587500233bea79b9e58d27541969746ddbb7686afd3659b811b99e2edb8ea",
+          "snippet": "           CALL 'CEE3ABD' USING ABCODE, TIMING.                                 ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-011",
+        "fan_in": 2,
+        "fan_out": 0
+      }
+    },
+    {
+      "id": "copybook:CVTRA03Y",
+      "type": "Copybook",
+      "name": "CVTRA03Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 80,
+          "end_line": 80,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "       COPY CVTRA03Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-004",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVTRA04Y",
+      "type": "Copybook",
+      "name": "CVTRA04Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 85,
+          "end_line": 85,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "       COPY CVTRA04Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-004",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVTRA07Y",
+      "type": "Copybook",
+      "name": "CVTRA07Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CBTRN03C.cbl",
+          "start_line": 90,
+          "end_line": 90,
+          "source_file_id": "sf-005",
+          "source_hash": "2ebe1157644180296950c0926987d42d6977dfa510a5ae487a5b46143cbd335b",
+          "snippet": "       COPY CVTRA07Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-004",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "copybook:CVEGG01Y",
+      "type": "Copybook",
+      "name": "CVEGG01Y",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CSUTLDTC.cbl",
+          "start_line": 61,
+          "end_line": 61,
+          "source_file_id": "sf-006",
+          "source_hash": "5d8b10cb9bf761be807fd175a9c50d9de1817fb376b126f5a33a1b93e09a2811",
+          "snippet": "       COPY CVEGG01Y.                                                           ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-002",
+        "reuse_count": 1
+      }
+    },
+    {
+      "id": "program:CEEDAYS",
+      "type": "Program",
+      "name": "CEEDAYS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/cbl/CSUTLDTC.cbl",
+          "start_line": 93,
+          "end_line": 93,
+          "source_file_id": "sf-006",
+          "source_hash": "5d8b10cb9bf761be807fd175a9c50d9de1817fb376b126f5a33a1b93e09a2811",
+          "snippet": "           CALL \"CEEDAYS\" USING                                                 ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-COBOL-011",
+        "fan_in": 1,
+        "fan_out": 0
+      }
+    },
+    {
+      "id": "jcl-step:TRANREPT/PRC001",
+      "type": "JCLStep",
+      "name": "PRC001",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 6,
+          "end_line": 7,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//PRC001.FILEIN  DD DISP=SHR,                                                   \n//        DSN=AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS                                ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-JCL-004"
+      }
+    },
+    {
+      "id": "program:SORT",
+      "type": "Program",
+      "name": "SORT",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/jcl/TRANREPT.jcl",
+          "start_line": 13,
+          "end_line": 13,
+          "source_file_id": "sf-007",
+          "source_hash": "8a51d1aac83bc4bfda66759723e028c5e4fb179d6adfc34d50c91ebc7bf0f307",
+          "snippet": "//STEP05R  EXEC PGM=SORT                                                        ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-JCL-002",
+        "fan_in": 2,
+        "fan_out": 0
+      }
+    },
+    {
+      "id": "program:IDCAMS",
+      "type": "Program",
+      "name": "IDCAMS",
+      "provenance": [
+        {
+          "source_path": "corpus/carddemo/stripped/app/proc/REPROC.prc",
+          "start_line": 2,
+          "end_line": 2,
+          "source_file_id": "sf-009",
+          "source_hash": "9d5357f624563028956beb958ed3d955b88eda86edb693f970acf53c99e4693b",
+          "snippet": "//PRC001 EXEC PGM=IDCAMS                                                        ",
+          "role": "use-site"
+        }
+      ],
+      "evidence_kind": "deterministic",
+      "rule_id": "RUL-RES-005",
+      "partial": true,
+      "properties": {
+        "partial_reason": "referenced_but_not_directly_observed",
+        "referenced_by_rule": "RUL-JCL-002",
+        "fan_in": 1,
+        "fan_out": 0
+      }
+    }
+  ]
+}

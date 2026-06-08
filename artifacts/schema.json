@@ -1,0 +1,299 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://carddemo-graph/schema/1.0.0",
+  "title": "carddemo-graph schema",
+  "description": "Entity, edge, observation, and provenance schema for the carddemo-graph KB. Implements spec v4.1.",
+  "schema_version": "1.1.0",
+  "type": "object",
+
+  "$defs": {
+
+    "EvidenceKind": {
+      "type": "string",
+      "enum": ["deterministic", "llm_candidate", "resolved", "derived", "manual"],
+      "description": "Per spec §Edge model. Pass 1 emits `deterministic`; Pass 2 emits `llm_candidate` only into observations.json; Pass 3 resolves chains to `resolved`/`derived`; humans can add `manual`."
+    },
+
+    "Confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Per spec §Confidence by evidence_kind. deterministic: typically 1.0; resolved: product over chain; derived: function of inputs; manual: requires reviewer note."
+    },
+
+    "ProvenanceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_path", "start_line", "end_line", "source_file_id", "source_hash"],
+      "properties": {
+        "source_path": {"type": "string"},
+        "start_line": {"type": "integer", "minimum": 1},
+        "end_line": {"type": "integer", "minimum": 1},
+        "snippet": {"type": "string", "description": "Optional verbatim snippet of the source range."},
+        "role": {"type": "string", "description": "Optional role hint (e.g., 'declaration', 'use-site', 'replacing-clause')."},
+        "source_file_id": {"type": "string"},
+        "source_hash": {"type": "string", "description": "Hash of the stripped source file at the time of extraction."}
+      }
+    },
+
+    "Provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/ProvenanceItem"}
+    },
+
+    "RuleId": {
+      "type": "string",
+      "pattern": "^RUL-[A-Z]+(?:-[A-Z]+)*-[0-9]{3}$",
+      "description": "Format: RUL-<LANG>(-<SUBCAT>)?-<NNN>. Examples: RUL-COBOL-001, RUL-JCL-PROC-001, RUL-DERIV-001."
+    },
+
+    "EntityType": {
+      "type": "string",
+      "enum": [
+        "Program",
+        "Copybook",
+        "JCLJob",
+        "JCLStep",
+        "JCLProc",
+        "JCLProcInvocation",
+        "LogicalFile",
+        "Dataset",
+        "BMSMapset",
+        "BMSMap",
+        "BMSField",
+        "CICSTransaction",
+        "DataItem"
+      ]
+    },
+
+    "EdgeType": {
+      "type": "string",
+      "enum": [
+        "INCLUDES",
+        "EXPANDS_TO",
+        "DEFINES_LAYOUT_FOR",
+        "CALLS",
+        "LINKS_TO",
+        "XCTLS_TO",
+        "RETURNS_TO_TRANSID",
+        "SENDS_MAP",
+        "RECEIVES_MAP",
+        "DECLARES_FILE",
+        "BINDS_TO",
+        "READS",
+        "WRITES",
+        "UPDATES",
+        "DELETES",
+        "STARTS_BROWSE",
+        "INVOKES",
+        "USES_DATASET",
+        "USES_PROC",
+        "PASSES_SYSIN_TO",
+        "IS_TRANSACTION_FOR",
+        "HAS_FIELD",
+        "CONTAINS_ITEM"
+      ]
+    },
+
+    "EntityId": {
+      "type": "string",
+      "description": "Canonical entity ID per spec §Entity model.",
+      "pattern": "^(program|copybook|jcl-job|jcl-step|jcl-proc|jcl-proc-inv|logical-file|dataset|bms-mapset|bms-map|bms-field|transaction|unresolved):.+$"
+    },
+
+    "SourceFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path", "source_hash", "normalized_source_hash", "encoding", "language", "parse_status"],
+      "properties": {
+        "id": {"type": "string"},
+        "path": {"type": "string"},
+        "source_hash": {"type": "string"},
+        "normalized_source_hash": {"type": "string", "description": "Hash after stripping comments and normalization."},
+        "encoding": {"type": "string"},
+        "language": {
+          "type": "string",
+          "enum": ["COBOL", "JCL", "JCL_PROC", "BMS", "CSD", "ASSEMBLER", "ASSEMBLER_MACRO", "IDCAMS_CTL", "TEXT"]
+        },
+        "parse_status": {
+          "type": "string",
+          "enum": ["ok", "partial", "failed", "skipped"]
+        }
+      }
+    },
+
+    "ArtifactHeader": {
+      "type": "object",
+      "required": ["schema_version", "extractor_version", "run_id", "corpus_hash", "source_files"],
+      "properties": {
+        "schema_version": {"type": "string", "const": "1.1.0"},
+        "extractor_version": {"type": "string"},
+        "run_id": {"type": "string"},
+        "corpus_hash": {"type": "string"},
+        "source_files": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/SourceFile"}
+        }
+      }
+    },
+
+    "Entity": {
+      "type": "object",
+      "required": ["id", "type", "name", "provenance"],
+      "properties": {
+        "id": {"$ref": "#/$defs/EntityId"},
+        "type": {"$ref": "#/$defs/EntityType"},
+        "name": {"type": "string"},
+        "partial": {"type": "boolean", "description": "True when canonical ID is reconstructed from partial evidence (e.g., CSD-only program, normalized DSN with unresolved tokens)."},
+        "provenance": {"$ref": "#/$defs/Provenance"},
+        "rule_id": {"$ref": "#/$defs/RuleId"},
+        "evidence_kind": {"$ref": "#/$defs/EvidenceKind"},
+        "properties": {
+          "type": "object",
+          "description": "Type-specific properties; see entity-type subschemas in $defs."
+        }
+      }
+    },
+
+    "Edge": {
+      "type": "object",
+      "required": ["id", "type", "from", "to", "confidence", "evidence_kind", "rule_id", "provenance"],
+      "properties": {
+        "id": {"type": "string"},
+        "type": {"$ref": "#/$defs/EdgeType"},
+        "from": {"$ref": "#/$defs/EntityId"},
+        "to": {"$ref": "#/$defs/EntityId"},
+        "confidence": {"$ref": "#/$defs/Confidence"},
+        "evidence_kind": {"$ref": "#/$defs/EvidenceKind"},
+        "rule_id": {"$ref": "#/$defs/RuleId"},
+        "provenance": {"$ref": "#/$defs/Provenance"},
+        "attributes": {
+          "type": "object",
+          "description": "Edge-type-specific attributes. Examples: BINDS_TO carries dd_name + binding_source; USES_DATASET carries allocation_disposition + inferred_access_mode + inference_basis; INCLUDES carries replacing_terms when COPY ... REPLACING used; CALLS carries kind ∈ {static, dynamic} and breadcrumb if dynamic."
+        }
+      }
+    },
+
+    "Enrichment": {
+      "type": "object",
+      "description": "LLM-inferred property on an existing entity. Lives in the SEPARATE enrichments.json artifact, never in entities.json. Skeleton consumers may ignore enrichments.json entirely. Pass 2 promotion writes here after applying explicit promotion criteria to llm_candidate observations. Empty in v1; the architecture is committed so Pass 2 has a defined target.",
+      "required": ["id", "entity_id", "property", "value", "evidence_kind", "prompt_template_id", "source_observations", "confidence", "provenance"],
+      "properties": {
+        "id": {"type": "string", "description": "Stable enrichment id, e.g. 'enrich-000001'."},
+        "entity_id": {"$ref": "#/$defs/EntityId", "description": "Target entity this enrichment annotates."},
+        "property": {"type": "string", "description": "Property name (e.g. 'inferred_purpose')."},
+        "value": {"description": "Inferred value. JSON-typed; usually string but free-form."},
+        "evidence_kind": {"type": "string", "const": "inferred", "description": "Always 'inferred' for enrichments — distinct from EvidenceKind enum used in skeleton."},
+        "prompt_template_id": {"type": "string", "description": "Versioned Pass-2 prompt that produced this inference."},
+        "source_observations": {
+          "type": "array",
+          "items": {"type": "string"},
+          "description": "Ids of llm_candidate observations the promotion criteria reviewed."
+        },
+        "confidence": {"$ref": "#/$defs/Confidence"},
+        "promotion_criteria": {"type": "string", "description": "Brief description of what the promotion step verified before writing this enrichment."},
+        "provenance": {"$ref": "#/$defs/Provenance"}
+      }
+    },
+
+    "Observation": {
+      "type": "object",
+      "description": "Output of Pass 1 (deterministic) and Pass 2 (llm_candidate). Pass 3 reads observations and writes final entities/edges. Observations are NOT entities — they are evidence claims that may resolve, merge, or be rejected.",
+      "required": ["id", "kind", "evidence_kind", "rule_id", "provenance"],
+      "properties": {
+        "id": {"type": "string"},
+        "kind": {
+          "type": "string",
+          "enum": [
+            "entity_candidate",
+            "edge_candidate",
+            "property_observation",
+            "unresolved_reference",
+            "anomaly"
+          ]
+        },
+        "evidence_kind": {"$ref": "#/$defs/EvidenceKind"},
+        "rule_id": {"$ref": "#/$defs/RuleId"},
+        "provenance": {"$ref": "#/$defs/Provenance"},
+        "data": {"type": "object", "description": "Kind-specific payload."},
+        "prompt_template_id": {
+          "type": "string",
+          "description": "Required when evidence_kind = llm_candidate. Identifies the versioned Pass 2 prompt that produced this observation."
+        },
+        "category": {
+          "type": "string",
+          "enum": ["observed", "hypothesized", "unsupported_construct", "needs_deterministic_rule"],
+          "description": "Required when evidence_kind = llm_candidate. Per spec §Pass 2."
+        },
+        "uncertainty_rationale": {"type": "string"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"evidence_kind": {"const": "llm_candidate"}}, "required": ["evidence_kind"]},
+          "then": {"required": ["prompt_template_id", "category"]}
+        }
+      ]
+    },
+
+    "EntitiesArtifact": {
+      "allOf": [
+        {"$ref": "#/$defs/ArtifactHeader"},
+        {
+          "type": "object",
+          "required": ["entities"],
+          "properties": {
+            "entities": {"type": "array", "items": {"$ref": "#/$defs/Entity"}}
+          }
+        }
+      ]
+    },
+
+    "EdgesArtifact": {
+      "allOf": [
+        {"$ref": "#/$defs/ArtifactHeader"},
+        {
+          "type": "object",
+          "required": ["edges"],
+          "properties": {
+            "edges": {"type": "array", "items": {"$ref": "#/$defs/Edge"}}
+          }
+        }
+      ]
+    },
+
+    "ObservationsArtifact": {
+      "allOf": [
+        {"$ref": "#/$defs/ArtifactHeader"},
+        {
+          "type": "object",
+          "required": ["observations"],
+          "properties": {
+            "observations": {"type": "array", "items": {"$ref": "#/$defs/Observation"}}
+          }
+        }
+      ]
+    },
+
+    "EnrichmentsArtifact": {
+      "description": "Separate artifact for LLM-inferred properties. Empty in v1 (`enrichments: []`). Gate-4 downstream-agent consumers MAY load this in addition to entities.json/edges.json; gold_match.py does NOT compare against this artifact (enrichments have their own eval framework once Pass 2 lands).",
+      "allOf": [
+        {"$ref": "#/$defs/ArtifactHeader"},
+        {
+          "type": "object",
+          "required": ["enrichments"],
+          "properties": {
+            "enrichments": {"type": "array", "items": {"$ref": "#/$defs/Enrichment"}}
+          }
+        }
+      ]
+    }
+  },
+
+  "oneOf": [
+    {"$ref": "#/$defs/EntitiesArtifact"},
+    {"$ref": "#/$defs/EdgesArtifact"},
+    {"$ref": "#/$defs/ObservationsArtifact"},
+    {"$ref": "#/$defs/EnrichmentsArtifact"}
+  ]
+}
