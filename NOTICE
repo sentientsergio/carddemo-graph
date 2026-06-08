@@ -1,0 +1,10 @@
+carddemo-graph
+Copyright 2026 Sergio DuBois
+
+This product includes software developed by Sergio DuBois.
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This work uses AWS CardDemo (https://github.com/aws-samples/aws-mainframe-modernization-carddemo)
+as a reference mainframe corpus. CardDemo is published by AWS Samples under its own
+Apache License 2.0 and is not redistributed in this repository (see README §"Reference
+corpus" and §"Acknowledgments").

@@ -1,0 +1,13 @@
+# Build artifacts — reproducible via build.sh, not vendored source.
+build/
+CallTree.jar
+# Generated ANTLR sources / classes (if ever produced in-tree by hand)
+upstream/src/CobolLexer.java
+upstream/src/CobolParser*.java
+upstream/src/CobolParserListener.java
+upstream/src/CobolParserVisitor.java
+upstream/src/CobolPreprocessor*.java
+upstream/src/*.tokens
+upstream/src/*.interp
+upstream/class/
+*.class

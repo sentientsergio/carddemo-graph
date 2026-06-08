@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Kuzu graph database — deterministic build product of entities.json + edges.json.
+# Rebuild via `PYTHONPATH=src .venv/bin/python -m carddemo_graph.pilot`.
+# Excluded from tracking because kuzu's column store inflates a small graph (~600
+# nodes+edges) into ~80MB on disk, well over GitHub's 50MB recommendation.
+artifacts/**/*.db
+*.db.wal
+*.wal
+
+# Phase-2 two-variant gate outputs — regenerable via artifacts/phase2_diff.py
+# (full Gate-3 extraction under CARDDEMO_COBOL_PARSER=regex|mapa to these dirs).
+artifacts/gate3_regex/
+artifacts/gate3_mapa/
+
+# macOS
+.DS_Store
+
+# Specs — private, not for public release
+carddemo-graph-spec-v*.md
+
+# Reference corpus — see README §"Reference corpus".
+# Upstream CardDemo source is not redistributed here; clone it yourself
+# (https://github.com/aws-samples/aws-mainframe-modernization-carddemo).
+# The stripped derivative is regenerable from upstream via the strip pipeline.
+corpus/carddemo/source/
+corpus/carddemo/stripped/
+
+# Editor / OS / misc
+*.swp
+.idea/
+.vscode/
